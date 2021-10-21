@@ -17,8 +17,11 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             InitializeComponent();
         }
 
+
         private void btnInHoaDon_Click(object sender, EventArgs e)
         {
+            FrmInHoaDon frm1 = new FrmInHoaDon();
+            frm1.Show();
         }
     }
 }
