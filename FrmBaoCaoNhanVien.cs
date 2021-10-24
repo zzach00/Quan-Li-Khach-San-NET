@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Quan_Li_Khach_San_NET.NhanVien
+namespace Quan_Li_Khach_San_NET
 {
-    public partial class FrmChucVu : Form
+    public partial class FrmBaoCaoNhanVien : Form
     {
-        public FrmChucVu()
+        public FrmBaoCaoNhanVien()
         {
             InitializeComponent();
-        }
-
-        private void btnTaoMoi_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

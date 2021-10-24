@@ -81,5 +81,24 @@ namespace Quan_Li_Khach_San_NET
         {
 
         }
+
+
+        private void báoCáoDoanhThuTheoHóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmBaoCaoDoanhThu frm8 = new FrmBaoCaoDoanhThu();
+            frm8.Show();
+        }
+
+        private void báoCáoDnahSáchNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmBaoCaoNhanVien frm9 = new FrmBaoCaoNhanVien();
+            frm9.Show();
+        }
+
+        private void báoCáoPhòngĐangSửDụngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmBaoCaoPhong frm9 = new FrmBaoCaoPhong();
+            frm9.Show();
+        }
     }
 }

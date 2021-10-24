@@ -142,6 +142,7 @@ namespace Quan_Li_Khach_San_NET.NhanVien
             this.btnTaoMoi.TabIndex = 12;
             this.btnTaoMoi.Text = "Tạo mới";
             this.btnTaoMoi.UseVisualStyleBackColor = true;
+            this.btnTaoMoi.Click += new System.EventHandler(this.btnTaoMoi_Click);
             // 
             // txtMaChucVu
             // 

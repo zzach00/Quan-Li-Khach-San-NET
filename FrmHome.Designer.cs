@@ -44,6 +44,7 @@ namespace Quan_Li_Khach_San_NET
             this.nhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinNhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinChứcVụToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.báoCáoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btmTimKiemThongTin = new System.Windows.Forms.Button();
             this.dataGridViewTimKiemThongTin = new System.Windows.Forms.DataGridView();
             this.cboMaDatPhong = new System.Windows.Forms.ComboBox();
@@ -55,6 +56,9 @@ namespace Quan_Li_Khach_San_NET
             this.rbtnTenPhong = new System.Windows.Forms.RadioButton();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.txtMaHoaDon = new System.Windows.Forms.TextBox();
+            this.báoCáoDoanhThuTheoHóaĐơnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.báoCáoDnahSáchNhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.báoCáoPhòngĐangSửDụngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTimKiemThongTin)).BeginInit();
@@ -86,7 +90,8 @@ namespace Quan_Li_Khach_San_NET
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.kháchHàngToolStripMenuItem,
             this.phòngToolStripMenuItem,
-            this.nhânViênToolStripMenuItem});
+            this.nhânViênToolStripMenuItem,
+            this.báoCáoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1107, 40);
@@ -169,6 +174,16 @@ namespace Quan_Li_Khach_San_NET
             this.thôngTinChứcVụToolStripMenuItem.Size = new System.Drawing.Size(321, 36);
             this.thôngTinChứcVụToolStripMenuItem.Text = "Thông tin chức vụ";
             this.thôngTinChứcVụToolStripMenuItem.Click += new System.EventHandler(this.thôngTinChứcVụToolStripMenuItem_Click);
+            // 
+            // báoCáoToolStripMenuItem
+            // 
+            this.báoCáoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.báoCáoDoanhThuTheoHóaĐơnToolStripMenuItem,
+            this.báoCáoDnahSáchNhânViênToolStripMenuItem,
+            this.báoCáoPhòngĐangSửDụngToolStripMenuItem});
+            this.báoCáoToolStripMenuItem.Name = "báoCáoToolStripMenuItem";
+            this.báoCáoToolStripMenuItem.Size = new System.Drawing.Size(113, 36);
+            this.báoCáoToolStripMenuItem.Text = "Báo cáo";
             // 
             // btmTimKiemThongTin
             // 
@@ -285,6 +300,27 @@ namespace Quan_Li_Khach_San_NET
             this.txtMaHoaDon.Size = new System.Drawing.Size(358, 34);
             this.txtMaHoaDon.TabIndex = 86;
             // 
+            // báoCáoDoanhThuTheoHóaĐơnToolStripMenuItem
+            // 
+            this.báoCáoDoanhThuTheoHóaĐơnToolStripMenuItem.Name = "báoCáoDoanhThuTheoHóaĐơnToolStripMenuItem";
+            this.báoCáoDoanhThuTheoHóaĐơnToolStripMenuItem.Size = new System.Drawing.Size(458, 36);
+            this.báoCáoDoanhThuTheoHóaĐơnToolStripMenuItem.Text = "Báo cáo doanh thu theo hóa đơn";
+            this.báoCáoDoanhThuTheoHóaĐơnToolStripMenuItem.Click += new System.EventHandler(this.báoCáoDoanhThuTheoHóaĐơnToolStripMenuItem_Click);
+            // 
+            // báoCáoDnahSáchNhânViênToolStripMenuItem
+            // 
+            this.báoCáoDnahSáchNhânViênToolStripMenuItem.Name = "báoCáoDnahSáchNhânViênToolStripMenuItem";
+            this.báoCáoDnahSáchNhânViênToolStripMenuItem.Size = new System.Drawing.Size(458, 36);
+            this.báoCáoDnahSáchNhânViênToolStripMenuItem.Text = "Báo cáo danh sách nhân viên";
+            this.báoCáoDnahSáchNhânViênToolStripMenuItem.Click += new System.EventHandler(this.báoCáoDnahSáchNhânViênToolStripMenuItem_Click);
+            // 
+            // báoCáoPhòngĐangSửDụngToolStripMenuItem
+            // 
+            this.báoCáoPhòngĐangSửDụngToolStripMenuItem.Name = "báoCáoPhòngĐangSửDụngToolStripMenuItem";
+            this.báoCáoPhòngĐangSửDụngToolStripMenuItem.Size = new System.Drawing.Size(458, 36);
+            this.báoCáoPhòngĐangSửDụngToolStripMenuItem.Text = "Báo cáo phòng đang sử dụng";
+            this.báoCáoPhòngĐangSửDụngToolStripMenuItem.Click += new System.EventHandler(this.báoCáoPhòngĐangSửDụngToolStripMenuItem_Click);
+            // 
             // FrmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -343,6 +379,10 @@ namespace Quan_Li_Khach_San_NET
         private System.Windows.Forms.RadioButton rbtnTenPhong;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.TextBox txtMaHoaDon;
+        private System.Windows.Forms.ToolStripMenuItem báoCáoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem báoCáoDoanhThuTheoHóaĐơnToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem báoCáoDnahSáchNhânViênToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem báoCáoPhòngĐangSửDụngToolStripMenuItem;
     }
 }
 
