@@ -1,7 +1,7 @@
 ﻿
 namespace Quan_Li_Khach_San_NET
 {
-    partial class FrmInHoaDon
+    partial class FrmInThongTinDatPhong
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,6 @@ namespace Quan_Li_Khach_San_NET
         private void InitializeComponent()
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.CRVHoaDon = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -41,30 +40,17 @@ namespace Quan_Li_Khach_San_NET
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1029, 656);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(800, 450);
             this.crystalReportViewer1.TabIndex = 0;
             // 
-            // CRVHoaDon
-            // 
-            this.CRVHoaDon.ActiveViewIndex = -1;
-            this.CRVHoaDon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CRVHoaDon.Cursor = System.Windows.Forms.Cursors.Default;
-            this.CRVHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CRVHoaDon.Location = new System.Drawing.Point(0, 0);
-            this.CRVHoaDon.Name = "CRVHoaDon";
-            this.CRVHoaDon.Size = new System.Drawing.Size(1029, 656);
-            this.CRVHoaDon.TabIndex = 1;
-            // 
-            // FrmInHoaDon
+            // FrmInThongTinKH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1029, 656);
-            this.Controls.Add(this.CRVHoaDon);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "FrmInHoaDon";
-            this.Text = "FrmInHoaDon";
-            this.Load += new System.EventHandler(this.FrmInHoaDon_Load);
+            this.Name = "FrmInThongTinKH";
+            this.Text = "FrmInThongTinKH";
             this.ResumeLayout(false);
 
         }
@@ -72,6 +58,5 @@ namespace Quan_Li_Khach_San_NET
         #endregion
 
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private CrystalDecisions.Windows.Forms.CrystalReportViewer CRVHoaDon;
     }
 }

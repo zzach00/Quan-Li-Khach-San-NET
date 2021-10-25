@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace Quan_Li_Khach_San_NET
 {
-    public partial class FrmBaoCaoDoanhThu : Form
+    public partial class FrmInThongTinDatPhong : Form
     {
-        public FrmBaoCaoDoanhThu()
+        public FrmInThongTinDatPhong()
         {
             InitializeComponent();
         }
-
-        private void FrmBaoCaoDoanhThu_Load(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }
