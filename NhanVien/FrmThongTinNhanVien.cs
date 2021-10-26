@@ -22,20 +22,6 @@ namespace Quan_Li_Khach_San_NET.NhanVien
 
         }
 
-        private void btnTaoMoi_Click(object sender, EventArgs e)
-        {
-            txtMaNhanVien.Text = "";
-            txtGioiTinh.Text = "";
-            txtCMND.Text = "";
-            txtSDT.Text = "";
-            txtEmail.Text = "";
-            txtHoVaTen.Text = "";
-            txtMaNhanVien.Focus();
-        }
 
-        private void cboMaChucVu_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
