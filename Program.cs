@@ -16,7 +16,7 @@ namespace Quan_Li_Khach_San_NET
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new NhanVien.FrmChucVu());
+            Application.Run(new FrmDangNhap());
         }
     }
 }
