@@ -67,19 +67,26 @@ namespace Quan_Li_Khach_San_NET
 
         private void FrmHome_Load(object sender, EventArgs e)
         {
-            LayBangNhanVien();
+            LoadData();
         }
 
-        public void LayBangNhanVien()
+        public void LoadData()
         {
             DataTable dta = new DataTable();
-            dta = kn.Lay_DulieuBang("Select * From nhanvien");
+            dta = kn.Lay_DulieuBang("Select * From khachhang");
             dataGridViewTimKiemThongTin.DataSource = dta;
-        }
+            
+            dta = kn.Lay_DulieuBang("Select * From loaiphong");
+            cboTenLoaiPhong.DataSource = dta;
+            cboTenLoaiPhong.DisplayMember = "tenlp";
 
-        private void btmTimKiemThongTin_Click(object sender, EventArgs e)
-        {
+            dta = kn.Lay_DulieuBang("Select * From phong");
+            cboTenPhong.DataSource = dta;
+            cboTenPhong.DisplayMember = "maphong";
 
+            dta = kn.Lay_DulieuBang("Select * From nhanvien");
+            cboMaNhanVien.DataSource = dta;
+            cboMaNhanVien.DisplayMember = "manv";
         }
 
 
@@ -100,5 +107,81 @@ namespace Quan_Li_Khach_San_NET
             FrmBaoCaoPhong frm9 = new FrmBaoCaoPhong();
             frm9.Show();
         }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmDangNhap frmDangNhap = new FrmDangNhap();
+            frmDangNhap.Show();
+            this.Hide();
+        }
+
+        private void rbtnTenKH_CheckedChanged(object sender, EventArgs e)
+        {
+            txtKhachHang.Enabled = true;
+            txtKhachHang.Focus();
+            cboTenLoaiPhong.Enabled = false;
+            cboTenPhong.Enabled = false;
+            cboMaNhanVien.Enabled = false;
+        }
+
+        private void rbtnTenLoaiPhong_CheckedChanged(object sender, EventArgs e)
+        {
+            txtKhachHang.Clear();
+            txtKhachHang.Enabled = false;
+            cboTenLoaiPhong.Enabled = true;
+            cboTenPhong.Enabled = false;
+            cboMaNhanVien.Enabled = false;
+        }
+
+        private void rbtnTenPhong_CheckedChanged(object sender, EventArgs e)
+        {
+            txtKhachHang.Clear();
+            txtKhachHang.Enabled = false;
+            cboTenLoaiPhong.Enabled = false;
+            cboTenPhong.Enabled = true;
+            cboMaNhanVien.Enabled = false;
+        }
+
+        private void rbtnMaNhanVien_CheckedChanged(object sender, EventArgs e)
+        {
+            txtKhachHang.Clear();
+            txtKhachHang.Enabled = false;
+            cboTenLoaiPhong.Enabled = false;
+            cboTenPhong.Enabled = false;
+            cboMaNhanVien.Enabled = true;
+        }
+
+        private void btmTimKiemThongTin_Click(object sender, EventArgs e)
+        {
+            DataTable dta = new DataTable();
+            string sql_tim_kiem;
+
+            if (rbtnTenKH.Checked)
+            {
+                sql_tim_kiem = "Select * from khachhang where hoten like '%" + txtKhachHang.Text + "%'";
+                dta = kn.Lay_DulieuBang(sql_tim_kiem);
+            }
+
+            if (rbtnTenLoaiPhong.Checked)
+            {
+                sql_tim_kiem = "Select * from loaiphong where tenlp like '%" + cboTenLoaiPhong.Text + "%'";
+                dta = kn.Lay_DulieuBang(sql_tim_kiem);
+            }
+
+            if (rbtnTenPhong.Checked)
+            {
+                sql_tim_kiem = "Select * from phong where maphong like '%" + cboTenPhong.Text + "%'";
+                dta = kn.Lay_DulieuBang(sql_tim_kiem);
+            }
+
+            if (rbtnMaNhanVien.Checked)
+            {
+                sql_tim_kiem = "Select * from nhanvien where manv like '%" + cboMaNhanVien.Text + "%'";
+                dta = kn.Lay_DulieuBang(sql_tim_kiem);
+            }
+
+            dataGridViewTimKiemThongTin.DataSource = dta;
+        }
+            
     }
 }

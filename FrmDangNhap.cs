@@ -28,7 +28,7 @@ namespace Quan_Li_Khach_San_NET
 
             string Acc = txtTenDangNhap.Text;
             string Pw = txtMatKhau.Text;
-            string sql_Login = "Select * from quyennv where id = '" + Acc + "' and matkhau = '" + Pw + "'";
+            string sql_Login = "Select * from quyennv where manv = '" + Acc + "' and matkhau = '" + Pw + "'";
 
             SqlCommand cmd = new SqlCommand(sql_Login, kn.cnn);
             SqlDataReader dataRead = cmd.ExecuteReader();
@@ -46,6 +46,11 @@ namespace Quan_Li_Khach_San_NET
                 txtTenDangNhap.Focus();
             }
 
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

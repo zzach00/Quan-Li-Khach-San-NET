@@ -40,9 +40,11 @@ namespace Quan_Li_Khach_San_NET
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.crystalReportViewer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1029, 656);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1129, 585);
             this.crystalReportViewer1.TabIndex = 0;
+            this.crystalReportViewer1.ToolPanelWidth = 150;
             // 
             // CRVHoaDon
             // 
@@ -51,17 +53,20 @@ namespace Quan_Li_Khach_San_NET
             this.CRVHoaDon.Cursor = System.Windows.Forms.Cursors.Default;
             this.CRVHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CRVHoaDon.Location = new System.Drawing.Point(0, 0);
+            this.CRVHoaDon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CRVHoaDon.Name = "CRVHoaDon";
-            this.CRVHoaDon.Size = new System.Drawing.Size(1029, 656);
+            this.CRVHoaDon.Size = new System.Drawing.Size(1129, 585);
             this.CRVHoaDon.TabIndex = 1;
+            this.CRVHoaDon.ToolPanelWidth = 150;
             // 
             // FrmInHoaDon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1029, 656);
+            this.ClientSize = new System.Drawing.Size(1129, 585);
             this.Controls.Add(this.CRVHoaDon);
             this.Controls.Add(this.crystalReportViewer1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmInHoaDon";
             this.Text = "FrmInHoaDon";
             this.Load += new System.EventHandler(this.FrmInHoaDon_Load);

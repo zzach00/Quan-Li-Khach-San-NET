@@ -69,7 +69,11 @@ namespace Quan_Li_Khach_San_NET.NhanVien
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
+            this.label2.Location = new System.Drawing.Point(164, 185);
+=======
             this.label2.Location = new System.Drawing.Point(197, 184);
+>>>>>>> 5bd698e6e94844b55d58cab2f59d7e269e2f89db
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(116, 24);
@@ -104,7 +108,11 @@ namespace Quan_Li_Khach_San_NET.NhanVien
             this.btnThoat.Location = new System.Drawing.Point(686, 395);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnThoat.Name = "btnThoat";
+<<<<<<< HEAD
+            this.btnThoat.Size = new System.Drawing.Size(122, 42);
+=======
             this.btnThoat.Size = new System.Drawing.Size(136, 42);
+>>>>>>> 5bd698e6e94844b55d58cab2f59d7e269e2f89db
             this.btnThoat.TabIndex = 16;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -116,7 +124,11 @@ namespace Quan_Li_Khach_San_NET.NhanVien
             this.btnXoa.Location = new System.Drawing.Point(686, 327);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnXoa.Name = "btnXoa";
+<<<<<<< HEAD
+            this.btnXoa.Size = new System.Drawing.Size(122, 42);
+=======
             this.btnXoa.Size = new System.Drawing.Size(136, 42);
+>>>>>>> 5bd698e6e94844b55d58cab2f59d7e269e2f89db
             this.btnXoa.TabIndex = 15;
             this.btnXoa.Text = "Xóa phòng";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -128,7 +140,11 @@ namespace Quan_Li_Khach_San_NET.NhanVien
             this.btnLuu.Location = new System.Drawing.Point(686, 260);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLuu.Name = "btnLuu";
+<<<<<<< HEAD
+            this.btnLuu.Size = new System.Drawing.Size(122, 42);
+=======
             this.btnLuu.Size = new System.Drawing.Size(136, 42);
+>>>>>>> 5bd698e6e94844b55d58cab2f59d7e269e2f89db
             this.btnLuu.TabIndex = 14;
             this.btnLuu.Text = "Lưu thông tin";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -140,7 +156,11 @@ namespace Quan_Li_Khach_San_NET.NhanVien
             this.btnSua.Location = new System.Drawing.Point(686, 193);
             this.btnSua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSua.Name = "btnSua";
+<<<<<<< HEAD
+            this.btnSua.Size = new System.Drawing.Size(122, 42);
+=======
             this.btnSua.Size = new System.Drawing.Size(136, 42);
+>>>>>>> 5bd698e6e94844b55d58cab2f59d7e269e2f89db
             this.btnSua.TabIndex = 13;
             this.btnSua.Text = "Sửa thông tin";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -152,7 +172,11 @@ namespace Quan_Li_Khach_San_NET.NhanVien
             this.btnTaoMoi.Location = new System.Drawing.Point(686, 130);
             this.btnTaoMoi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTaoMoi.Name = "btnTaoMoi";
+<<<<<<< HEAD
+            this.btnTaoMoi.Size = new System.Drawing.Size(122, 42);
+=======
             this.btnTaoMoi.Size = new System.Drawing.Size(136, 42);
+>>>>>>> 5bd698e6e94844b55d58cab2f59d7e269e2f89db
             this.btnTaoMoi.TabIndex = 12;
             this.btnTaoMoi.Text = "Tạo mới";
             this.btnTaoMoi.UseVisualStyleBackColor = true;
@@ -180,7 +204,11 @@ namespace Quan_Li_Khach_San_NET.NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
+            this.ClientSize = new System.Drawing.Size(1129, 585);
+=======
             this.ClientSize = new System.Drawing.Size(868, 572);
+>>>>>>> 5bd698e6e94844b55d58cab2f59d7e269e2f89db
             this.Controls.Add(this.dataGridViewChucVu);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
