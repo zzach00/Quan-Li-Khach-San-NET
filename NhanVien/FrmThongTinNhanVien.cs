@@ -22,6 +22,9 @@ namespace Quan_Li_Khach_San_NET.NhanVien
 
         }
 
+        private void FrmThongTinNhanVien_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }

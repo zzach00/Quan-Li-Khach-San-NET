@@ -32,5 +32,15 @@ namespace Quan_Li_Khach_San_NET.Properties {
                 return ((string)(this["QLKSCConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=QLKSC;Integrated Security=True")]
+        public string QLKSCConnectionString1 {
+            get {
+                return ((string)(this["QLKSCConnectionString1"]));
+            }
+        }
     }
 }

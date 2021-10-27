@@ -29,5 +29,10 @@ namespace Quan_Li_Khach_San_NET
             bc_ThongTinDP.SetDataSource(dta);
             CRV.ReportSource = bc_ThongTinDP;
         }
+
+        private void CRV_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -21,10 +21,7 @@ namespace Quan_Li_Khach_San_NET.NhanVien
 
 
         Ketnoi kn = new Ketnoi();
-        private void FrmChucVu_Load(object sender, EventArgs e)
-        {
-            LayBangChucVu();
-        }
+
         public void LayBangChucVu()
         {
             DataTable dta = new DataTable();
@@ -100,6 +97,11 @@ namespace Quan_Li_Khach_San_NET.NhanVien
             string sql_xoa;
             sql_xoa = "delete chucvu where macv = '" + txtMaChucVu.Text + "'";
             kn.ThucThi(sql_xoa);
+            LayBangChucVu();
+        }
+
+        private void FrmChucVu_Load_1(object sender, EventArgs e)
+        {
             LayBangChucVu();
         }
     }
