@@ -16,5 +16,11 @@ namespace Quan_Li_Khach_San_NET.KhachHang
         {
             InitializeComponent();
         }
+
+        private void btmTimKiemPhong_Click(object sender, EventArgs e)
+        {
+            FrmInThongTinDatPhong frmInThongTinDatPhong = new FrmInThongTinDatPhong(txtMaDatPhong.Text);
+            frmInThongTinDatPhong.Show();
+        }
     }
 }

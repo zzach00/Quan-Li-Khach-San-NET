@@ -16,10 +16,14 @@ namespace Quan_Li_Khach_San_NET
         {
             InitializeComponent();
         }
+        Ketnoi kn = new Ketnoi();
 
         private void FrmBaoCaoDoanhThu_Load(object sender, EventArgs e)
         {
-
+            DataTable dta = kn.Lay_DulieuBang("SELECT * FROM doanhthu");
+            RpBaoCaoDoanhThu bc_DoanhThu = new RpBaoCaoDoanhThu();
+            bc_DoanhThu.SetDataSource(dta);
+            CRV.ReportSource = bc_DoanhThu;
         }
 
     }

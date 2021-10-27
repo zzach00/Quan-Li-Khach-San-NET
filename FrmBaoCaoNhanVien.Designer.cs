@@ -29,26 +29,30 @@ namespace Quan_Li_Khach_San_NET
         /// </summary>
         private void InitializeComponent()
         {
-            this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.CRV = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.SuspendLayout();
             // 
-            // crystalReportViewer1
+            // CRV
             // 
-            this.crystalReportViewer1.ActiveViewIndex = -1;
-            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(800, 450);
-            this.crystalReportViewer1.TabIndex = 0;
+            this.CRV.ActiveViewIndex = -1;
+            this.CRV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CRV.Cursor = System.Windows.Forms.Cursors.Default;
+            this.CRV.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CRV.Location = new System.Drawing.Point(0, 0);
+            this.CRV.Margin = new System.Windows.Forms.Padding(2);
+            this.CRV.Name = "CRV";
+            this.CRV.Size = new System.Drawing.Size(1129, 585);
+            this.CRV.TabIndex = 0;
+            this.CRV.ToolPanelWidth = 150;
+            this.CRV.Load += new System.EventHandler(this.CRV_Load);
             // 
             // FrmBaoCaoNhanVien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.crystalReportViewer1);
+            this.ClientSize = new System.Drawing.Size(1129, 585);
+            this.Controls.Add(this.CRV);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmBaoCaoNhanVien";
             this.Text = "FrmBaoCaoNhanVien";
             this.ResumeLayout(false);
@@ -57,6 +61,6 @@ namespace Quan_Li_Khach_San_NET
 
         #endregion
 
-        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer CRV;
     }
 }

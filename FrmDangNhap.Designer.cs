@@ -42,9 +42,10 @@ namespace Quan_Li_Khach_San_NET
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(410, 67);
+            this.label6.Location = new System.Drawing.Point(308, 54);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(213, 44);
+            this.label6.Size = new System.Drawing.Size(170, 36);
             this.label6.TabIndex = 21;
             this.label6.Text = "Đăng nhập";
             // 
@@ -52,45 +53,50 @@ namespace Quan_Li_Khach_San_NET
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(170, 160);
+            this.label1.Location = new System.Drawing.Point(128, 130);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(175, 29);
+            this.label1.Size = new System.Drawing.Size(141, 24);
             this.label1.TabIndex = 41;
             this.label1.Text = "Tên đăng nhập";
             // 
             // txtTenDangNhap
             // 
             this.txtTenDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenDangNhap.Location = new System.Drawing.Point(359, 155);
+            this.txtTenDangNhap.Location = new System.Drawing.Point(269, 126);
+            this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
-            this.txtTenDangNhap.Size = new System.Drawing.Size(297, 34);
+            this.txtTenDangNhap.Size = new System.Drawing.Size(224, 28);
             this.txtTenDangNhap.TabIndex = 40;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(170, 237);
+            this.label2.Location = new System.Drawing.Point(128, 193);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 29);
+            this.label2.Size = new System.Drawing.Size(86, 24);
             this.label2.TabIndex = 41;
             this.label2.Text = "Mật khẩu";
             // 
             // txtMatKhau
             // 
             this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatKhau.Location = new System.Drawing.Point(359, 237);
+            this.txtMatKhau.Location = new System.Drawing.Point(269, 193);
+            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(297, 34);
+            this.txtMatKhau.Size = new System.Drawing.Size(224, 28);
             this.txtMatKhau.TabIndex = 42;
             // 
             // btmTimKiemThongTin
             // 
             this.btmTimKiemThongTin.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btmTimKiemThongTin.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btmTimKiemThongTin.Location = new System.Drawing.Point(719, 148);
+            this.btmTimKiemThongTin.Location = new System.Drawing.Point(539, 120);
+            this.btmTimKiemThongTin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btmTimKiemThongTin.Name = "btmTimKiemThongTin";
-            this.btmTimKiemThongTin.Size = new System.Drawing.Size(163, 49);
+            this.btmTimKiemThongTin.Size = new System.Drawing.Size(122, 40);
             this.btmTimKiemThongTin.TabIndex = 85;
             this.btmTimKiemThongTin.Text = "Đăng nhập";
             this.btmTimKiemThongTin.UseVisualStyleBackColor = false;
@@ -99,18 +105,20 @@ namespace Quan_Li_Khach_San_NET
             // btnThoat
             // 
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(719, 225);
+            this.btnThoat.Location = new System.Drawing.Point(539, 183);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(163, 52);
+            this.btnThoat.Size = new System.Drawing.Size(122, 42);
             this.btnThoat.TabIndex = 86;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // FrmDangNhap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1014, 413);
+            this.ClientSize = new System.Drawing.Size(760, 336);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btmTimKiemThongTin);
             this.Controls.Add(this.txtMatKhau);
@@ -118,6 +126,7 @@ namespace Quan_Li_Khach_San_NET
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtTenDangNhap);
             this.Controls.Add(this.label6);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmDangNhap";
             this.Text = "FrmDangNhap";
             this.ResumeLayout(false);

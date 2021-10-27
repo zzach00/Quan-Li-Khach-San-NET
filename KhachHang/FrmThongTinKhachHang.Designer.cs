@@ -54,20 +54,22 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             // dataGridViewThongTinKH
             // 
             this.dataGridViewThongTinKH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewThongTinKH.Location = new System.Drawing.Point(83, 480);
+            this.dataGridViewThongTinKH.Location = new System.Drawing.Point(62, 390);
+            this.dataGridViewThongTinKH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridViewThongTinKH.Name = "dataGridViewThongTinKH";
             this.dataGridViewThongTinKH.RowHeadersWidth = 51;
             this.dataGridViewThongTinKH.RowTemplate.Height = 24;
-            this.dataGridViewThongTinKH.Size = new System.Drawing.Size(752, 230);
+            this.dataGridViewThongTinKH.Size = new System.Drawing.Size(564, 187);
             this.dataGridViewThongTinKH.TabIndex = 24;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(256, 238);
+            this.label3.Location = new System.Drawing.Point(192, 193);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(160, 29);
+            this.label3.Size = new System.Drawing.Size(123, 24);
             this.label3.TabIndex = 18;
             this.label3.Text = "CMND/CCCD";
             // 
@@ -75,9 +77,10 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(333, 177);
+            this.label2.Location = new System.Drawing.Point(250, 144);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 29);
+            this.label2.Size = new System.Drawing.Size(66, 24);
             this.label2.TabIndex = 19;
             this.label2.Text = "Họ tên";
             // 
@@ -85,9 +88,10 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(364, 52);
+            this.label6.Location = new System.Drawing.Point(273, 42);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(403, 44);
+            this.label6.Size = new System.Drawing.Size(324, 36);
             this.label6.TabIndex = 20;
             this.label6.Text = "Thông tin khách hàng";
             // 
@@ -95,18 +99,20 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(242, 116);
+            this.label1.Location = new System.Drawing.Point(182, 94);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 29);
+            this.label1.Size = new System.Drawing.Size(140, 24);
             this.label1.TabIndex = 21;
             this.label1.Text = "Mã khách hàng";
             // 
             // btnThoat
             // 
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(905, 442);
+            this.btnThoat.Location = new System.Drawing.Point(679, 359);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(163, 52);
+            this.btnThoat.Size = new System.Drawing.Size(122, 42);
             this.btnThoat.TabIndex = 16;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -114,9 +120,10 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(905, 359);
+            this.btnXoa.Location = new System.Drawing.Point(679, 292);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(163, 52);
+            this.btnXoa.Size = new System.Drawing.Size(122, 42);
             this.btnXoa.TabIndex = 15;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -124,9 +131,10 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             // btnLuu
             // 
             this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.Location = new System.Drawing.Point(905, 276);
+            this.btnLuu.Location = new System.Drawing.Point(679, 224);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(163, 52);
+            this.btnLuu.Size = new System.Drawing.Size(122, 42);
             this.btnLuu.TabIndex = 14;
             this.btnLuu.Text = "Lưu thông tin";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -134,9 +142,10 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(905, 193);
+            this.btnSua.Location = new System.Drawing.Point(679, 157);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(163, 52);
+            this.btnSua.Size = new System.Drawing.Size(122, 42);
             this.btnSua.TabIndex = 13;
             this.btnSua.Text = "Sửa thông tin";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -144,9 +153,10 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             // btnTaoMoi
             // 
             this.btnTaoMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaoMoi.Location = new System.Drawing.Point(905, 116);
+            this.btnTaoMoi.Location = new System.Drawing.Point(679, 94);
+            this.btnTaoMoi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTaoMoi.Name = "btnTaoMoi";
-            this.btnTaoMoi.Size = new System.Drawing.Size(163, 52);
+            this.btnTaoMoi.Size = new System.Drawing.Size(122, 42);
             this.btnTaoMoi.TabIndex = 12;
             this.btnTaoMoi.Text = "Tạo mới";
             this.btnTaoMoi.UseVisualStyleBackColor = true;
@@ -154,18 +164,20 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             // txtMaPhong
             // 
             this.txtMaPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaPhong.Location = new System.Drawing.Point(465, 116);
+            this.txtMaPhong.Location = new System.Drawing.Point(349, 94);
+            this.txtMaPhong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMaPhong.Name = "txtMaPhong";
-            this.txtMaPhong.Size = new System.Drawing.Size(358, 34);
+            this.txtMaPhong.Size = new System.Drawing.Size(270, 28);
             this.txtMaPhong.TabIndex = 11;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(262, 299);
+            this.label5.Location = new System.Drawing.Point(196, 243);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(154, 29);
+            this.label5.Size = new System.Drawing.Size(121, 24);
             this.label5.TabIndex = 18;
             this.label5.Text = "Số điện thoại";
             // 
@@ -173,9 +185,10 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(342, 360);
+            this.label7.Location = new System.Drawing.Point(256, 292);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(74, 29);
+            this.label7.Size = new System.Drawing.Size(57, 24);
             this.label7.TabIndex = 18;
             this.label7.Text = "Email";
             // 
@@ -183,58 +196,64 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(330, 421);
+            this.label8.Location = new System.Drawing.Point(248, 342);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(86, 29);
+            this.label8.Size = new System.Drawing.Size(67, 24);
             this.label8.TabIndex = 18;
             this.label8.Text = "Địa chỉ";
             // 
             // txtHoTenKH
             // 
             this.txtHoTenKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHoTenKH.Location = new System.Drawing.Point(465, 176);
+            this.txtHoTenKH.Location = new System.Drawing.Point(349, 143);
+            this.txtHoTenKH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtHoTenKH.Name = "txtHoTenKH";
-            this.txtHoTenKH.Size = new System.Drawing.Size(358, 34);
+            this.txtHoTenKH.Size = new System.Drawing.Size(270, 28);
             this.txtHoTenKH.TabIndex = 11;
             // 
             // txtCMND
             // 
             this.txtCMND.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCMND.Location = new System.Drawing.Point(465, 236);
+            this.txtCMND.Location = new System.Drawing.Point(349, 192);
+            this.txtCMND.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCMND.Name = "txtCMND";
-            this.txtCMND.Size = new System.Drawing.Size(358, 34);
+            this.txtCMND.Size = new System.Drawing.Size(270, 28);
             this.txtCMND.TabIndex = 11;
             // 
             // txtSDT
             // 
             this.txtSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSDT.Location = new System.Drawing.Point(465, 296);
+            this.txtSDT.Location = new System.Drawing.Point(349, 240);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(358, 34);
+            this.txtSDT.Size = new System.Drawing.Size(270, 28);
             this.txtSDT.TabIndex = 11;
             // 
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(465, 356);
+            this.txtEmail.Location = new System.Drawing.Point(349, 289);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(358, 34);
+            this.txtEmail.Size = new System.Drawing.Size(270, 28);
             this.txtEmail.TabIndex = 11;
             // 
             // txtDiaChi
             // 
             this.txtDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiaChi.Location = new System.Drawing.Point(465, 416);
+            this.txtDiaChi.Location = new System.Drawing.Point(349, 338);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(358, 34);
+            this.txtDiaChi.Size = new System.Drawing.Size(270, 28);
             this.txtDiaChi.TabIndex = 11;
             // 
             // FrmThongTinKhachHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(1140, 747);
+            this.ClientSize = new System.Drawing.Size(1129, 585);
             this.Controls.Add(this.dataGridViewThongTinKH);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -254,6 +273,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             this.Controls.Add(this.txtCMND);
             this.Controls.Add(this.txtHoTenKH);
             this.Controls.Add(this.txtMaPhong);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmThongTinKhachHang";
             this.Text = "Thông tin khách hàng";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewThongTinKH)).EndInit();
