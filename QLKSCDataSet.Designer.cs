@@ -20,9 +20,9 @@ namespace Quan_Li_Khach_San_NET {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("QLKSCDataSet1")]
+    [global::System.Xml.Serialization.XmlRootAttribute("QLKSCDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class QLKSCDataSet1 : global::System.Data.DataSet {
+    public partial class QLKSCDataSet : global::System.Data.DataSet {
         
         private chucvuDataTable tablechucvu;
         
@@ -78,7 +78,7 @@ namespace Quan_Li_Khach_San_NET {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public QLKSCDataSet1() {
+        public QLKSCDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -89,7 +89,7 @@ namespace Quan_Li_Khach_San_NET {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected QLKSCDataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected QLKSCDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -357,7 +357,7 @@ namespace Quan_Li_Khach_San_NET {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            QLKSCDataSet1 cln = ((QLKSCDataSet1)(base.Clone()));
+            QLKSCDataSet cln = ((QLKSCDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -565,9 +565,9 @@ namespace Quan_Li_Khach_San_NET {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "QLKSCDataSet1";
+            this.DataSetName = "QLKSCDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/QLKSCDataSet1.xsd";
+            this.Namespace = "http://tempuri.org/QLKSCDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tablechucvu = new chucvuDataTable();
@@ -743,7 +743,7 @@ namespace Quan_Li_Khach_San_NET {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            QLKSCDataSet1 ds = new QLKSCDataSet1();
+            QLKSCDataSet ds = new QLKSCDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -1048,7 +1048,7 @@ namespace Quan_Li_Khach_San_NET {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLKSCDataSet1 ds = new QLKSCDataSet1();
+                QLKSCDataSet ds = new QLKSCDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1330,7 +1330,7 @@ namespace Quan_Li_Khach_San_NET {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLKSCDataSet1 ds = new QLKSCDataSet1();
+                QLKSCDataSet ds = new QLKSCDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1734,7 +1734,7 @@ namespace Quan_Li_Khach_San_NET {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLKSCDataSet1 ds = new QLKSCDataSet1();
+                QLKSCDataSet ds = new QLKSCDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2042,7 +2042,7 @@ namespace Quan_Li_Khach_San_NET {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLKSCDataSet1 ds = new QLKSCDataSet1();
+                QLKSCDataSet ds = new QLKSCDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2380,7 +2380,7 @@ namespace Quan_Li_Khach_San_NET {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLKSCDataSet1 ds = new QLKSCDataSet1();
+                QLKSCDataSet ds = new QLKSCDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2669,7 +2669,7 @@ namespace Quan_Li_Khach_San_NET {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLKSCDataSet1 ds = new QLKSCDataSet1();
+                QLKSCDataSet ds = new QLKSCDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3057,7 +3057,7 @@ namespace Quan_Li_Khach_San_NET {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLKSCDataSet1 ds = new QLKSCDataSet1();
+                QLKSCDataSet ds = new QLKSCDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3332,7 +3332,7 @@ namespace Quan_Li_Khach_San_NET {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLKSCDataSet1 ds = new QLKSCDataSet1();
+                QLKSCDataSet ds = new QLKSCDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3623,7 +3623,7 @@ namespace Quan_Li_Khach_San_NET {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLKSCDataSet1 ds = new QLKSCDataSet1();
+                QLKSCDataSet ds = new QLKSCDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3921,7 +3921,7 @@ namespace Quan_Li_Khach_San_NET {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLKSCDataSet1 ds = new QLKSCDataSet1();
+                QLKSCDataSet ds = new QLKSCDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4242,7 +4242,7 @@ namespace Quan_Li_Khach_San_NET {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLKSCDataSet1 ds = new QLKSCDataSet1();
+                QLKSCDataSet ds = new QLKSCDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4606,7 +4606,7 @@ namespace Quan_Li_Khach_San_NET {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLKSCDataSet1 ds = new QLKSCDataSet1();
+                QLKSCDataSet ds = new QLKSCDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4944,7 +4944,7 @@ namespace Quan_Li_Khach_San_NET {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLKSCDataSet1 ds = new QLKSCDataSet1();
+                QLKSCDataSet ds = new QLKSCDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -5329,7 +5329,7 @@ namespace Quan_Li_Khach_San_NET {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLKSCDataSet1 ds = new QLKSCDataSet1();
+                QLKSCDataSet ds = new QLKSCDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -5717,7 +5717,7 @@ namespace Quan_Li_Khach_San_NET {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QLKSCDataSet1 ds = new QLKSCDataSet1();
+                QLKSCDataSet ds = new QLKSCDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -7804,7 +7804,7 @@ namespace Quan_Li_Khach_San_NET {
         }
     }
 }
-namespace Quan_Li_Khach_San_NET.QLKSCDataSet1TableAdapters {
+namespace Quan_Li_Khach_San_NET.QLKSCDataSetTableAdapters {
     
     
     /// <summary>
@@ -7978,7 +7978,7 @@ namespace Quan_Li_Khach_San_NET.QLKSCDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLKSCDataSet1.chucvuDataTable dataTable) {
+        public virtual int Fill(QLKSCDataSet.chucvuDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -7991,9 +7991,9 @@ namespace Quan_Li_Khach_San_NET.QLKSCDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLKSCDataSet1.chucvuDataTable GetData() {
+        public virtual QLKSCDataSet.chucvuDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QLKSCDataSet1.chucvuDataTable dataTable = new QLKSCDataSet1.chucvuDataTable();
+            QLKSCDataSet.chucvuDataTable dataTable = new QLKSCDataSet.chucvuDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -8001,14 +8001,14 @@ namespace Quan_Li_Khach_San_NET.QLKSCDataSet1TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLKSCDataSet1.chucvuDataTable dataTable) {
+        public virtual int Update(QLKSCDataSet.chucvuDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLKSCDataSet1 dataSet) {
+        public virtual int Update(QLKSCDataSet dataSet) {
             return this.Adapter.Update(dataSet, "chucvu");
         }
         
@@ -8318,7 +8318,7 @@ namespace Quan_Li_Khach_San_NET.QLKSCDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLKSCDataSet1.ctphongdatDataTable dataTable) {
+        public virtual int Fill(QLKSCDataSet.ctphongdatDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -8331,9 +8331,9 @@ namespace Quan_Li_Khach_San_NET.QLKSCDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLKSCDataSet1.ctphongdatDataTable GetData() {
+        public virtual QLKSCDataSet.ctphongdatDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QLKSCDataSet1.ctphongdatDataTable dataTable = new QLKSCDataSet1.ctphongdatDataTable();
+            QLKSCDataSet.ctphongdatDataTable dataTable = new QLKSCDataSet.ctphongdatDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -8341,14 +8341,14 @@ namespace Quan_Li_Khach_San_NET.QLKSCDataSet1TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLKSCDataSet1.ctphongdatDataTable dataTable) {
+        public virtual int Update(QLKSCDataSet.ctphongdatDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLKSCDataSet1 dataSet) {
+        public virtual int Update(QLKSCDataSet dataSet) {
             return this.Adapter.Update(dataSet, "ctphongdat");
         }
         
@@ -8701,7 +8701,7 @@ SELECT madp, manv, makh, tenlp, ngaydat, ngayden, ngaydi, tiendatcoc, soluong, t
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLKSCDataSet1.datphongDataTable dataTable) {
+        public virtual int Fill(QLKSCDataSet.datphongDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -8714,9 +8714,9 @@ SELECT madp, manv, makh, tenlp, ngaydat, ngayden, ngaydi, tiendatcoc, soluong, t
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLKSCDataSet1.datphongDataTable GetData() {
+        public virtual QLKSCDataSet.datphongDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QLKSCDataSet1.datphongDataTable dataTable = new QLKSCDataSet1.datphongDataTable();
+            QLKSCDataSet.datphongDataTable dataTable = new QLKSCDataSet.datphongDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -8724,14 +8724,14 @@ SELECT madp, manv, makh, tenlp, ngaydat, ngayden, ngaydi, tiendatcoc, soluong, t
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLKSCDataSet1.datphongDataTable dataTable) {
+        public virtual int Update(QLKSCDataSet.datphongDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLKSCDataSet1 dataSet) {
+        public virtual int Update(QLKSCDataSet dataSet) {
             return this.Adapter.Update(dataSet, "datphong");
         }
         
@@ -9211,7 +9211,7 @@ SELECT mahd, madp, ngaylap, tongtien FROM hoadon WHERE (mahd = @mahd)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLKSCDataSet1.hoadonDataTable dataTable) {
+        public virtual int Fill(QLKSCDataSet.hoadonDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -9224,9 +9224,9 @@ SELECT mahd, madp, ngaylap, tongtien FROM hoadon WHERE (mahd = @mahd)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLKSCDataSet1.hoadonDataTable GetData() {
+        public virtual QLKSCDataSet.hoadonDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QLKSCDataSet1.hoadonDataTable dataTable = new QLKSCDataSet1.hoadonDataTable();
+            QLKSCDataSet.hoadonDataTable dataTable = new QLKSCDataSet.hoadonDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -9234,14 +9234,14 @@ SELECT mahd, madp, ngaylap, tongtien FROM hoadon WHERE (mahd = @mahd)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLKSCDataSet1.hoadonDataTable dataTable) {
+        public virtual int Update(QLKSCDataSet.hoadonDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLKSCDataSet1 dataSet) {
+        public virtual int Update(QLKSCDataSet dataSet) {
             return this.Adapter.Update(dataSet, "hoadon");
         }
         
@@ -9580,7 +9580,7 @@ SELECT makh, hoten, cmnd, sdt, email, diachi FROM khachhang WHERE (makh = @makh)
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLKSCDataSet1.khachhangDataTable dataTable) {
+        public virtual int Fill(QLKSCDataSet.khachhangDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -9593,9 +9593,9 @@ SELECT makh, hoten, cmnd, sdt, email, diachi FROM khachhang WHERE (makh = @makh)
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLKSCDataSet1.khachhangDataTable GetData() {
+        public virtual QLKSCDataSet.khachhangDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QLKSCDataSet1.khachhangDataTable dataTable = new QLKSCDataSet1.khachhangDataTable();
+            QLKSCDataSet.khachhangDataTable dataTable = new QLKSCDataSet.khachhangDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -9603,14 +9603,14 @@ SELECT makh, hoten, cmnd, sdt, email, diachi FROM khachhang WHERE (makh = @makh)
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLKSCDataSet1.khachhangDataTable dataTable) {
+        public virtual int Update(QLKSCDataSet.khachhangDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLKSCDataSet1 dataSet) {
+        public virtual int Update(QLKSCDataSet dataSet) {
             return this.Adapter.Update(dataSet, "khachhang");
         }
         
@@ -10025,7 +10025,7 @@ SELECT tenlp, soluong, giaphong FROM loaiphong WHERE (tenlp = @tenlp)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLKSCDataSet1.loaiphongDataTable dataTable) {
+        public virtual int Fill(QLKSCDataSet.loaiphongDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -10038,9 +10038,9 @@ SELECT tenlp, soluong, giaphong FROM loaiphong WHERE (tenlp = @tenlp)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLKSCDataSet1.loaiphongDataTable GetData() {
+        public virtual QLKSCDataSet.loaiphongDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QLKSCDataSet1.loaiphongDataTable dataTable = new QLKSCDataSet1.loaiphongDataTable();
+            QLKSCDataSet.loaiphongDataTable dataTable = new QLKSCDataSet.loaiphongDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -10048,14 +10048,14 @@ SELECT tenlp, soluong, giaphong FROM loaiphong WHERE (tenlp = @tenlp)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLKSCDataSet1.loaiphongDataTable dataTable) {
+        public virtual int Update(QLKSCDataSet.loaiphongDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLKSCDataSet1 dataSet) {
+        public virtual int Update(QLKSCDataSet dataSet) {
             return this.Adapter.Update(dataSet, "loaiphong");
         }
         
@@ -10385,7 +10385,7 @@ SELECT manv, macv, hoten, ngaysinh, gioitinh, sdt, cmnd, diachi, email FROM nhan
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLKSCDataSet1.nhanvienDataTable dataTable) {
+        public virtual int Fill(QLKSCDataSet.nhanvienDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -10398,9 +10398,9 @@ SELECT manv, macv, hoten, ngaysinh, gioitinh, sdt, cmnd, diachi, email FROM nhan
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLKSCDataSet1.nhanvienDataTable GetData() {
+        public virtual QLKSCDataSet.nhanvienDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QLKSCDataSet1.nhanvienDataTable dataTable = new QLKSCDataSet1.nhanvienDataTable();
+            QLKSCDataSet.nhanvienDataTable dataTable = new QLKSCDataSet.nhanvienDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -10408,14 +10408,14 @@ SELECT manv, macv, hoten, ngaysinh, gioitinh, sdt, cmnd, diachi, email FROM nhan
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLKSCDataSet1.nhanvienDataTable dataTable) {
+        public virtual int Update(QLKSCDataSet.nhanvienDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLKSCDataSet1 dataSet) {
+        public virtual int Update(QLKSCDataSet dataSet) {
             return this.Adapter.Update(dataSet, "nhanvien");
         }
         
@@ -10912,7 +10912,7 @@ SELECT manv, macv, hoten, ngaysinh, gioitinh, sdt, cmnd, diachi, email FROM nhan
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLKSCDataSet1.phanquyenDataTable dataTable) {
+        public virtual int Fill(QLKSCDataSet.phanquyenDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -10925,9 +10925,9 @@ SELECT manv, macv, hoten, ngaysinh, gioitinh, sdt, cmnd, diachi, email FROM nhan
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLKSCDataSet1.phanquyenDataTable GetData() {
+        public virtual QLKSCDataSet.phanquyenDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QLKSCDataSet1.phanquyenDataTable dataTable = new QLKSCDataSet1.phanquyenDataTable();
+            QLKSCDataSet.phanquyenDataTable dataTable = new QLKSCDataSet.phanquyenDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -10935,14 +10935,14 @@ SELECT manv, macv, hoten, ngaysinh, gioitinh, sdt, cmnd, diachi, email FROM nhan
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLKSCDataSet1.phanquyenDataTable dataTable) {
+        public virtual int Update(QLKSCDataSet.phanquyenDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLKSCDataSet1 dataSet) {
+        public virtual int Update(QLKSCDataSet dataSet) {
             return this.Adapter.Update(dataSet, "phanquyen");
         }
         
@@ -11262,7 +11262,7 @@ SELECT maphong, tenlp, tinhtrang FROM phong WHERE (maphong = @maphong)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLKSCDataSet1.phongDataTable dataTable) {
+        public virtual int Fill(QLKSCDataSet.phongDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -11275,9 +11275,9 @@ SELECT maphong, tenlp, tinhtrang FROM phong WHERE (maphong = @maphong)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLKSCDataSet1.phongDataTable GetData() {
+        public virtual QLKSCDataSet.phongDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QLKSCDataSet1.phongDataTable dataTable = new QLKSCDataSet1.phongDataTable();
+            QLKSCDataSet.phongDataTable dataTable = new QLKSCDataSet.phongDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -11285,14 +11285,14 @@ SELECT maphong, tenlp, tinhtrang FROM phong WHERE (maphong = @maphong)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLKSCDataSet1.phongDataTable dataTable) {
+        public virtual int Update(QLKSCDataSet.phongDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLKSCDataSet1 dataSet) {
+        public virtual int Update(QLKSCDataSet dataSet) {
             return this.Adapter.Update(dataSet, "phong");
         }
         
@@ -11640,7 +11640,7 @@ SELECT maphong, tenlp, tinhtrang FROM phong WHERE (maphong = @maphong)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLKSCDataSet1.quyennvDataTable dataTable) {
+        public virtual int Fill(QLKSCDataSet.quyennvDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -11653,9 +11653,9 @@ SELECT maphong, tenlp, tinhtrang FROM phong WHERE (maphong = @maphong)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLKSCDataSet1.quyennvDataTable GetData() {
+        public virtual QLKSCDataSet.quyennvDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QLKSCDataSet1.quyennvDataTable dataTable = new QLKSCDataSet1.quyennvDataTable();
+            QLKSCDataSet.quyennvDataTable dataTable = new QLKSCDataSet.quyennvDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -11663,14 +11663,14 @@ SELECT maphong, tenlp, tinhtrang FROM phong WHERE (maphong = @maphong)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLKSCDataSet1.quyennvDataTable dataTable) {
+        public virtual int Update(QLKSCDataSet.quyennvDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QLKSCDataSet1 dataSet) {
+        public virtual int Update(QLKSCDataSet dataSet) {
             return this.Adapter.Update(dataSet, "quyennv");
         }
         
@@ -11983,7 +11983,7 @@ SELECT maphong, tenlp, tinhtrang FROM phong WHERE (maphong = @maphong)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLKSCDataSet1.doanhthuDataTable dataTable) {
+        public virtual int Fill(QLKSCDataSet.doanhthuDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -11996,9 +11996,9 @@ SELECT maphong, tenlp, tinhtrang FROM phong WHERE (maphong = @maphong)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLKSCDataSet1.doanhthuDataTable GetData() {
+        public virtual QLKSCDataSet.doanhthuDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QLKSCDataSet1.doanhthuDataTable dataTable = new QLKSCDataSet1.doanhthuDataTable();
+            QLKSCDataSet.doanhthuDataTable dataTable = new QLKSCDataSet.doanhthuDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -12158,7 +12158,7 @@ SELECT maphong, tenlp, tinhtrang FROM phong WHERE (maphong = @maphong)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLKSCDataSet1.thongtindatDataTable dataTable) {
+        public virtual int Fill(QLKSCDataSet.thongtindatDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -12171,9 +12171,9 @@ SELECT maphong, tenlp, tinhtrang FROM phong WHERE (maphong = @maphong)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLKSCDataSet1.thongtindatDataTable GetData() {
+        public virtual QLKSCDataSet.thongtindatDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QLKSCDataSet1.thongtindatDataTable dataTable = new QLKSCDataSet1.thongtindatDataTable();
+            QLKSCDataSet.thongtindatDataTable dataTable = new QLKSCDataSet.thongtindatDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -12331,7 +12331,7 @@ SELECT maphong, tenlp, tinhtrang FROM phong WHERE (maphong = @maphong)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLKSCDataSet1.getdskhDataTable dataTable) {
+        public virtual int Fill(QLKSCDataSet.getdskhDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -12344,9 +12344,9 @@ SELECT maphong, tenlp, tinhtrang FROM phong WHERE (maphong = @maphong)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLKSCDataSet1.getdskhDataTable GetData() {
+        public virtual QLKSCDataSet.getdskhDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QLKSCDataSet1.getdskhDataTable dataTable = new QLKSCDataSet1.getdskhDataTable();
+            QLKSCDataSet.getdskhDataTable dataTable = new QLKSCDataSet.getdskhDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -12507,7 +12507,7 @@ SELECT maphong, tenlp, tinhtrang FROM phong WHERE (maphong = @maphong)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLKSCDataSet1.getdsnvDataTable dataTable) {
+        public virtual int Fill(QLKSCDataSet.getdsnvDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -12520,9 +12520,9 @@ SELECT maphong, tenlp, tinhtrang FROM phong WHERE (maphong = @maphong)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLKSCDataSet1.getdsnvDataTable GetData() {
+        public virtual QLKSCDataSet.getdsnvDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QLKSCDataSet1.getdsnvDataTable dataTable = new QLKSCDataSet1.getdsnvDataTable();
+            QLKSCDataSet.getdsnvDataTable dataTable = new QLKSCDataSet.getdsnvDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -12685,7 +12685,7 @@ SELECT maphong, tenlp, tinhtrang FROM phong WHERE (maphong = @maphong)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLKSCDataSet1.gethoadonDataTable dataTable, string madp) {
+        public virtual int Fill(QLKSCDataSet.gethoadonDataTable dataTable, string madp) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((madp == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -12704,7 +12704,7 @@ SELECT maphong, tenlp, tinhtrang FROM phong WHERE (maphong = @maphong)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLKSCDataSet1.gethoadonDataTable GetData(string madp) {
+        public virtual QLKSCDataSet.gethoadonDataTable GetData(string madp) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((madp == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -12712,7 +12712,7 @@ SELECT maphong, tenlp, tinhtrang FROM phong WHERE (maphong = @maphong)";
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(madp));
             }
-            QLKSCDataSet1.gethoadonDataTable dataTable = new QLKSCDataSet1.gethoadonDataTable();
+            QLKSCDataSet.gethoadonDataTable dataTable = new QLKSCDataSet.gethoadonDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -13016,7 +13016,7 @@ SELECT maphong, tenlp, tinhtrang FROM phong WHERE (maphong = @maphong)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(QLKSCDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(QLKSCDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._chucvuTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.chucvu.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -13116,7 +13116,7 @@ SELECT maphong, tenlp, tinhtrang FROM phong WHERE (maphong = @maphong)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(QLKSCDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(QLKSCDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._chucvuTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.chucvu.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -13206,7 +13206,7 @@ SELECT maphong, tenlp, tinhtrang FROM phong WHERE (maphong = @maphong)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(QLKSCDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(QLKSCDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._quyennvTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.quyennv.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -13320,7 +13320,7 @@ SELECT maphong, tenlp, tinhtrang FROM phong WHERE (maphong = @maphong)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(QLKSCDataSet1 dataSet) {
+        public virtual int UpdateAll(QLKSCDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
