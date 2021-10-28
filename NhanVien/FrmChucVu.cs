@@ -94,10 +94,19 @@ namespace Quan_Li_Khach_San_NET.NhanVien
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            string sql_xoa;
-            sql_xoa = "delete chucvu where macv = '" + txtMaChucVu.Text + "'";
-            kn.ThucThi(sql_xoa);
-            LayBangChucVu();
+            try
+            {
+                string sql_xoa;
+                sql_xoa = "delete chucvu where macv = '" + txtMaChucVu.Text + "'";
+                kn.ThucThi(sql_xoa);
+                LayBangChucVu();
+            }
+            catch (System.Data.SqlClient.SqlException)
+            {
+                string message = "Mã này đang có người sử dụng ";
+                MessageBox.Show(message);
+            }
+            
         }
 
         private void FrmChucVu_Load_1(object sender, EventArgs e)
