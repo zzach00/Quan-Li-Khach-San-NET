@@ -109,5 +109,10 @@ namespace Quan_Li_Khach_San_NET
         {
             this.Close();
         }
+
+        private void FrmThongTinPhong_Load(object sender, EventArgs e)
+        {
+            GET_TABLE_THONGTINPHONG();
+        }
     }
 }
