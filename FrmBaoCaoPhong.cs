@@ -25,7 +25,7 @@ namespace Quan_Li_Khach_San_NET
             bc_Phong.SetDataSource(dta);
             CRV.ReportSource = bc_Phong;
 
-            dta = kn.Lay_DulieuBang("SELECT DISTINCT tinhtrang FROM phong ");
+            dta = kn.Lay_DulieuBang("SELECT DISTINCT tinhtrang FROM phong");
             cboTinhTrang.DataSource = dta;
             cboTinhTrang.DisplayMember = "tinhtrang";
         }

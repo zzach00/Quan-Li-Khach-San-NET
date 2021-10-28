@@ -17,7 +17,7 @@ namespace Quan_Li_Khach_San_NET
 
         public void KetNoi_Dulieu()
         {
-            string str = @"Data Source=.;Initial Catalog=QLKSC;Integrated Security=True";
+            string str = @"Data Source=MARKLANY\SQLEXPRESS;Initial Catalog=QLKSC;Integrated Security=True";
             cnn = new SqlConnection(str);
             cnn.Open();
         }
