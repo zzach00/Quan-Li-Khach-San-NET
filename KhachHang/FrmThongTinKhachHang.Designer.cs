@@ -39,7 +39,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnTaoMoi = new System.Windows.Forms.Button();
-            this.txtMaPhong = new System.Windows.Forms.TextBox();
+            this.txtMaKH = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -55,7 +55,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             // 
             this.dataGridViewThongTinKH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewThongTinKH.Location = new System.Drawing.Point(62, 390);
-            this.dataGridViewThongTinKH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridViewThongTinKH.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewThongTinKH.Name = "dataGridViewThongTinKH";
             this.dataGridViewThongTinKH.RowHeadersWidth = 51;
             this.dataGridViewThongTinKH.RowTemplate.Height = 24;
@@ -110,65 +110,70 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             // 
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.Location = new System.Drawing.Point(679, 359);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(2);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(122, 42);
+            this.btnThoat.Size = new System.Drawing.Size(145, 42);
             this.btnThoat.TabIndex = 16;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.Location = new System.Drawing.Point(679, 292);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(122, 42);
+            this.btnXoa.Size = new System.Drawing.Size(145, 42);
             this.btnXoa.TabIndex = 15;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnLuu
             // 
             this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.Location = new System.Drawing.Point(679, 224);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(122, 42);
+            this.btnLuu.Size = new System.Drawing.Size(145, 42);
             this.btnLuu.TabIndex = 14;
             this.btnLuu.Text = "Lưu thông tin";
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.Location = new System.Drawing.Point(679, 157);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(2);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(122, 42);
+            this.btnSua.Size = new System.Drawing.Size(145, 42);
             this.btnSua.TabIndex = 13;
             this.btnSua.Text = "Sửa thông tin";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnTaoMoi
             // 
             this.btnTaoMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTaoMoi.Location = new System.Drawing.Point(679, 94);
-            this.btnTaoMoi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTaoMoi.Margin = new System.Windows.Forms.Padding(2);
             this.btnTaoMoi.Name = "btnTaoMoi";
-            this.btnTaoMoi.Size = new System.Drawing.Size(122, 42);
+            this.btnTaoMoi.Size = new System.Drawing.Size(145, 42);
             this.btnTaoMoi.TabIndex = 12;
             this.btnTaoMoi.Text = "Tạo mới";
             this.btnTaoMoi.UseVisualStyleBackColor = true;
+            this.btnTaoMoi.Click += new System.EventHandler(this.btnTaoMoi_Click);
             // 
-            // txtMaPhong
+            // txtMaKH
             // 
-            this.txtMaPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaPhong.Location = new System.Drawing.Point(349, 94);
-            this.txtMaPhong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtMaPhong.Name = "txtMaPhong";
-            this.txtMaPhong.Size = new System.Drawing.Size(270, 28);
-            this.txtMaPhong.TabIndex = 11;
+            this.txtMaKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaKH.Location = new System.Drawing.Point(349, 94);
+            this.txtMaKH.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMaKH.Name = "txtMaKH";
+            this.txtMaKH.Size = new System.Drawing.Size(270, 28);
+            this.txtMaKH.TabIndex = 11;
             // 
             // label5
             // 
@@ -207,7 +212,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             // 
             this.txtHoTenKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHoTenKH.Location = new System.Drawing.Point(349, 143);
-            this.txtHoTenKH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtHoTenKH.Margin = new System.Windows.Forms.Padding(2);
             this.txtHoTenKH.Name = "txtHoTenKH";
             this.txtHoTenKH.Size = new System.Drawing.Size(270, 28);
             this.txtHoTenKH.TabIndex = 11;
@@ -216,7 +221,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             // 
             this.txtCMND.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCMND.Location = new System.Drawing.Point(349, 192);
-            this.txtCMND.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCMND.Margin = new System.Windows.Forms.Padding(2);
             this.txtCMND.Name = "txtCMND";
             this.txtCMND.Size = new System.Drawing.Size(270, 28);
             this.txtCMND.TabIndex = 11;
@@ -225,7 +230,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             // 
             this.txtSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSDT.Location = new System.Drawing.Point(349, 240);
-            this.txtSDT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(2);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(270, 28);
             this.txtSDT.TabIndex = 11;
@@ -234,7 +239,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(349, 289);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(270, 28);
             this.txtEmail.TabIndex = 11;
@@ -243,7 +248,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             // 
             this.txtDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiaChi.Location = new System.Drawing.Point(349, 338);
-            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(2);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(270, 28);
             this.txtDiaChi.TabIndex = 11;
@@ -272,10 +277,11 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             this.Controls.Add(this.txtSDT);
             this.Controls.Add(this.txtCMND);
             this.Controls.Add(this.txtHoTenKH);
-            this.Controls.Add(this.txtMaPhong);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Controls.Add(this.txtMaKH);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmThongTinKhachHang";
             this.Text = "Thông tin khách hàng";
+            this.Load += new System.EventHandler(this.FrmThongTinKhachHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewThongTinKH)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -293,7 +299,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnTaoMoi;
-        private System.Windows.Forms.TextBox txtMaPhong;
+        private System.Windows.Forms.TextBox txtMaKH;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
