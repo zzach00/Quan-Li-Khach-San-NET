@@ -113,5 +113,10 @@ namespace Quan_Li_Khach_San_NET
         {
             this.Close();
         }
+
+        private void FrmLoaiPhong_Load_1(object sender, EventArgs e)
+        {
+            GET_TABLE_LOAIPHONG();
+        }
     }
 }

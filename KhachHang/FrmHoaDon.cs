@@ -23,5 +23,10 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             FrmInHoaDon frm1 = new FrmInHoaDon();
             frm1.Show();
         }
+
+        private void FrmHoaDon_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

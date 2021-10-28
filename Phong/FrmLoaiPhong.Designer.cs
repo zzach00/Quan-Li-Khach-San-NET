@@ -49,32 +49,30 @@ namespace Quan_Li_Khach_San_NET
             // dataGridViewLoaiPhong
             // 
             this.dataGridViewLoaiPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewLoaiPhong.Location = new System.Drawing.Point(69, 287);
-            this.dataGridViewLoaiPhong.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridViewLoaiPhong.Location = new System.Drawing.Point(92, 353);
+            this.dataGridViewLoaiPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewLoaiPhong.Name = "dataGridViewLoaiPhong";
             this.dataGridViewLoaiPhong.RowHeadersWidth = 51;
             this.dataGridViewLoaiPhong.RowTemplate.Height = 24;
-            this.dataGridViewLoaiPhong.Size = new System.Drawing.Size(564, 187);
+            this.dataGridViewLoaiPhong.Size = new System.Drawing.Size(752, 230);
             this.dataGridViewLoaiPhong.TabIndex = 24;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(338, 177);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(451, 218);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 24);
+            this.label4.Size = new System.Drawing.Size(0, 29);
             this.label4.TabIndex = 17;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(253, 210);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(337, 258);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 24);
+            this.label3.Size = new System.Drawing.Size(124, 29);
             this.label3.TabIndex = 18;
             this.label3.Text = "Giá phòng";
             // 
@@ -82,10 +80,9 @@ namespace Quan_Li_Khach_San_NET
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(264, 157);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(352, 193);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 24);
+            this.label2.Size = new System.Drawing.Size(109, 29);
             this.label2.TabIndex = 19;
             this.label2.Text = "Số lượng";
             // 
@@ -93,10 +90,9 @@ namespace Quan_Li_Khach_San_NET
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(306, 43);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(408, 53);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(309, 36);
+            this.label6.Size = new System.Drawing.Size(383, 44);
             this.label6.TabIndex = 20;
             this.label6.Text = "Thông tin loại phòng";
             // 
@@ -104,20 +100,19 @@ namespace Quan_Li_Khach_San_NET
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(214, 103);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(285, 127);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 24);
+            this.label1.Size = new System.Drawing.Size(175, 29);
             this.label1.TabIndex = 21;
             this.label1.Text = "Tên loại phòng";
             // 
             // btnThoat
             // 
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(695, 358);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(2);
+            this.btnThoat.Location = new System.Drawing.Point(927, 441);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(122, 42);
+            this.btnThoat.Size = new System.Drawing.Size(163, 52);
             this.btnThoat.TabIndex = 16;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -126,10 +121,10 @@ namespace Quan_Li_Khach_San_NET
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(695, 291);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
+            this.btnXoa.Location = new System.Drawing.Point(927, 358);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(122, 42);
+            this.btnXoa.Size = new System.Drawing.Size(163, 52);
             this.btnXoa.TabIndex = 15;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -138,10 +133,10 @@ namespace Quan_Li_Khach_San_NET
             // btnLuu
             // 
             this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.Location = new System.Drawing.Point(695, 223);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLuu.Location = new System.Drawing.Point(927, 274);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(122, 42);
+            this.btnLuu.Size = new System.Drawing.Size(163, 52);
             this.btnLuu.TabIndex = 14;
             this.btnLuu.Text = "Lưu thông tin";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -150,10 +145,10 @@ namespace Quan_Li_Khach_San_NET
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(695, 156);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSua.Location = new System.Drawing.Point(927, 192);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(122, 42);
+            this.btnSua.Size = new System.Drawing.Size(163, 52);
             this.btnSua.TabIndex = 13;
             this.btnSua.Text = "Sửa thông tin";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -162,10 +157,10 @@ namespace Quan_Li_Khach_San_NET
             // btnTaoMoi
             // 
             this.btnTaoMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaoMoi.Location = new System.Drawing.Point(695, 93);
-            this.btnTaoMoi.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTaoMoi.Location = new System.Drawing.Point(927, 114);
+            this.btnTaoMoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTaoMoi.Name = "btnTaoMoi";
-            this.btnTaoMoi.Size = new System.Drawing.Size(122, 42);
+            this.btnTaoMoi.Size = new System.Drawing.Size(163, 52);
             this.btnTaoMoi.TabIndex = 12;
             this.btnTaoMoi.Text = "Tạo mới";
             this.btnTaoMoi.UseVisualStyleBackColor = true;
@@ -174,35 +169,35 @@ namespace Quan_Li_Khach_San_NET
             // txtTenLoaiPhong
             // 
             this.txtTenLoaiPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenLoaiPhong.Location = new System.Drawing.Point(364, 99);
-            this.txtTenLoaiPhong.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTenLoaiPhong.Location = new System.Drawing.Point(485, 122);
+            this.txtTenLoaiPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenLoaiPhong.Name = "txtTenLoaiPhong";
-            this.txtTenLoaiPhong.Size = new System.Drawing.Size(270, 28);
+            this.txtTenLoaiPhong.Size = new System.Drawing.Size(359, 34);
             this.txtTenLoaiPhong.TabIndex = 11;
             // 
             // txtSoLuong
             // 
             this.txtSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoLuong.Location = new System.Drawing.Point(364, 153);
-            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSoLuong.Location = new System.Drawing.Point(485, 188);
+            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Size = new System.Drawing.Size(270, 28);
+            this.txtSoLuong.Size = new System.Drawing.Size(359, 34);
             this.txtSoLuong.TabIndex = 11;
             // 
             // txtGiaPhong
             // 
             this.txtGiaPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGiaPhong.Location = new System.Drawing.Point(364, 206);
-            this.txtGiaPhong.Margin = new System.Windows.Forms.Padding(2);
+            this.txtGiaPhong.Location = new System.Drawing.Point(485, 254);
+            this.txtGiaPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGiaPhong.Name = "txtGiaPhong";
-            this.txtGiaPhong.Size = new System.Drawing.Size(270, 28);
+            this.txtGiaPhong.Size = new System.Drawing.Size(359, 34);
             this.txtGiaPhong.TabIndex = 11;
             // 
             // FrmLoaiPhong
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(886, 510);
+            this.ClientSize = new System.Drawing.Size(1181, 628);
             this.Controls.Add(this.dataGridViewLoaiPhong);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -217,9 +212,10 @@ namespace Quan_Li_Khach_San_NET
             this.Controls.Add(this.txtGiaPhong);
             this.Controls.Add(this.txtSoLuong);
             this.Controls.Add(this.txtTenLoaiPhong);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmLoaiPhong";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FrmLoaiPhong_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLoaiPhong)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
