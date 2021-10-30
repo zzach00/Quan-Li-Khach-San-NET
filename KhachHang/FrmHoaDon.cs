@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace Quan_Li_Khach_San_NET.KhachHang
 {
@@ -67,9 +69,63 @@ namespace Quan_Li_Khach_San_NET.KhachHang
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            string sql_Sua = "Update nhanvien SET macv = '" + cboMaChucVu.Text + "', hoten = '" + txtHoVaTen.Text + "', ngaysinh = '" + dateNgaySinh.Value + "', gioitinh = '" + txtGioiTinh.Text + "', sdt = '" + txtSDT.Text + "', cmnd = '" + txtCMND.Text + "', diachi = '" + txtDiaChi.Text + "', email = '" + txtEmail.Text + "'  where manv = '" + txtMaNhanVien.Text + "'";
+            string sql_Sua = "Update hoadon SET madp = '" + cboMaDatPhong.Text + "', ngaylap = '" + dateNgayLap.Value + "', tongtien = '" + txtTongTien.Text +  "'  where mahd = '" + txtMaHoaDon.Text + "'";
             kn.ThucThi(sql_Sua);
             GET_TABLE_HOADON();
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            kn.KetNoi_Dulieu();
+            string strKtra = "SELECT mahd from hoadon where mahd = '" + txtMaHoaDon.Text + "'";
+            SqlCommand cmd = new SqlCommand(strKtra, kn.cnn);
+            SqlDataReader doc_dl = cmd.ExecuteReader();
+            if (doc_dl.Read() == true)
+            {
+                MessageBox.Show("Ma hoa don nay da co o tren du lieu", "Thong bao");
+                txtMaHoaDon.Focus();
+                doc_dl.Close();
+                doc_dl.Dispose();
+            }
+            else
+            {
+                try
+                {
+                    string sql_luu = "Insert into hoadon  Values('" + txtMaHoaDon.Text + "','" + cboMaDatPhong.Text + "','" + dateNgayLap.Value + "','" + txtTongTien.Text +  "')";
+                    kn.ThucThi(sql_luu);
+                    GET_TABLE_HOADON();
+
+                }
+                catch (System.Data.SqlClient.SqlException)
+                {
+                    string message = "Lỗi!";
+                    MessageBox.Show(message);
+                }
+
+
+            }
+
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string sql_xoa;
+                sql_xoa = "delete hoadon where mahd = '" + txtMaHoaDon.Text + "'";
+                kn.ThucThi(sql_xoa);
+                GET_TABLE_HOADON();
+            }
+            catch (System.Data.SqlClient.SqlException)
+            {
+                string message = "Xoa khong thanh cong! ";
+                MessageBox.Show(message);
+            }
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

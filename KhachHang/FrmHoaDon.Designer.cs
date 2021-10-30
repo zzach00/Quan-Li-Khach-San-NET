@@ -200,6 +200,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             this.btnThoat.TabIndex = 78;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnXoa
             // 
@@ -211,6 +212,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             this.btnXoa.TabIndex = 77;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnLuu
             // 
@@ -222,6 +224,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             this.btnLuu.TabIndex = 76;
             this.btnLuu.Text = "Lưu thông tin";
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnSua
             // 
