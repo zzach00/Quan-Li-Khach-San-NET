@@ -112,7 +112,11 @@ namespace Quan_Li_Khach_San_NET
 
         private void FrmThongTinPhong_Load(object sender, EventArgs e)
         {
+            DataTable dtamcv = kn.Lay_DulieuBang("Select * from phong order by maphong");
+            cboTenLoaiPhong.DataSource = dtamcv;
+            cboTenLoaiPhong.DisplayMember = "maphong";
             GET_TABLE_THONGTINPHONG();
+
         }
     }
 }

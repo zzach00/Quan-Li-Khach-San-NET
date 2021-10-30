@@ -143,10 +143,22 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             else
             {
                 int trangthai = cboTrangThai.Text == "False" ? 0 : 1;
-                string sql_luu = "Insert into datphong values('" + txtMaDatPhong.Text + "','" + cboMaNhanVien.Text + "','" + cboMaKhach.Text + "', '" + cboTenLoaiPhong.Text + "', '" + dateNgayDat.Text +  "', '" + dateNgayDen.Text + "', '"
-                    +  dateNgayDi.Value + "', '" + txtTienDatCoc.Text + "', '" + txtSoLuong.Text + "', '" + trangthai + "')";
-                kn.ThucThi(sql_luu);
-                BANG_DATPHONG();
+                DateTime inTime = Convert.ToDateTime(dateNgayDen.Text);
+                DateTime outTime = Convert.ToDateTime(dateNgayDi.Text);
+
+                if (outTime >= inTime)
+                {
+                    int coutnDay = outTime.Subtract(inTime).Days;
+                    DataTable dataTable = new DataTable();
+                    dataTable = kn.Lay_DulieuBang("SELECT giaphong FROM loaiphong where tenlp = '"+ txtMaDatPhong.Text + "'" );
+                    //get total order
+                    float tongtien = coutnDay * Int32.Parse(txtSoLuong.Text); 
+                    string sql_luu = "Insert into datphong values('" + txtMaDatPhong.Text + "','" + cboMaNhanVien.Text + "','" + cboMaKhach.Text + "', '" + cboTenLoaiPhong.Text + "', '" + dateNgayDat.Text + "', '" + dateNgayDen.Text + "', '"
+                    + dateNgayDi.Value + "', '" + txtTienDatCoc.Text + "', '" + txtSoLuong.Text + "', '" + trangthai + "','" + tongtien + "' )";
+                    kn.ThucThi(sql_luu);
+                    BANG_DATPHONG();
+                }
+                    
             }
         }
 
