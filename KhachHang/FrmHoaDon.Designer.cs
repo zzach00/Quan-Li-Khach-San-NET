@@ -158,7 +158,6 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             // 
             // txtTongTien
             // 
-            this.txtTongTien.Enabled = false;
             this.txtTongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTongTien.Location = new System.Drawing.Point(355, 284);
             this.txtTongTien.Margin = new System.Windows.Forms.Padding(2);
