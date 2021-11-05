@@ -722,6 +722,49 @@ SELECT manv, id, matkhau FROM quyennv WHERE (id = @id) AND (manv = @manv)</Comma
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="thongtindatTableAdapter" GeneratorDataComponentClassName="thongtindatTableAdapter" Name="thongtindat" UserDataComponentName="thongtindatTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLKSCConnectionString1 (Settings)" DbObjectName="QLKSC.dbo.thongtindat" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT hoten, makh, ngayden, ngaydi, madp, soluong, tiendatcoc, trangthai FROM dbo.thongtindat</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="hoten" DataSetColumn="hoten" />
+              <Mapping SourceColumn="makh" DataSetColumn="makh" />
+              <Mapping SourceColumn="ngayden" DataSetColumn="ngayden" />
+              <Mapping SourceColumn="ngaydi" DataSetColumn="ngaydi" />
+              <Mapping SourceColumn="madp" DataSetColumn="madp" />
+              <Mapping SourceColumn="soluong" DataSetColumn="soluong" />
+              <Mapping SourceColumn="tiendatcoc" DataSetColumn="tiendatcoc" />
+              <Mapping SourceColumn="trangthai" DataSetColumn="trangthai" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="doanhthuTableAdapter" GeneratorDataComponentClassName="doanhthuTableAdapter" Name="doanhthu" UserDataComponentName="doanhthuTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLKSCConnectionString1 (Settings)" DbObjectName="QLKSC.dbo.doanhthu" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ngaylap, madp, mahd, tenlp, tongtien FROM dbo.doanhthu</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ngaylap" DataSetColumn="ngaylap" />
+              <Mapping SourceColumn="madp" DataSetColumn="madp" />
+              <Mapping SourceColumn="mahd" DataSetColumn="mahd" />
+              <Mapping SourceColumn="tenlp" DataSetColumn="tenlp" />
+              <Mapping SourceColumn="tongtien" DataSetColumn="tongtien" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -730,7 +773,7 @@ SELECT manv, id, matkhau FROM quyennv WHERE (id = @id) AND (manv = @manv)</Comma
   <xs:element name="QLKSCDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="QLKSCDataSet1" msprop:Generator_UserDSName="QLKSCDataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="chucvu" msprop:Generator_TableClassName="chucvuDataTable" msprop:Generator_TableVarName="tablechucvu" msprop:Generator_RowChangedName="chucvuRowChanged" msprop:Generator_TablePropName="chucvu" msprop:Generator_RowDeletingName="chucvuRowDeleting" msprop:Generator_RowChangingName="chucvuRowChanging" msprop:Generator_RowEvHandlerName="chucvuRowChangeEventHandler" msprop:Generator_RowDeletedName="chucvuRowDeleted" msprop:Generator_RowClassName="chucvuRow" msprop:Generator_UserTableName="chucvu" msprop:Generator_RowEvArgName="chucvuRowChangeEvent">
+        <xs:element name="chucvu" msprop:Generator_TableClassName="chucvuDataTable" msprop:Generator_TableVarName="tablechucvu" msprop:Generator_TablePropName="chucvu" msprop:Generator_RowDeletingName="chucvuRowDeleting" msprop:Generator_RowChangingName="chucvuRowChanging" msprop:Generator_RowEvHandlerName="chucvuRowChangeEventHandler" msprop:Generator_RowDeletedName="chucvuRowDeleted" msprop:Generator_UserTableName="chucvu" msprop:Generator_RowChangedName="chucvuRowChanged" msprop:Generator_RowEvArgName="chucvuRowChangeEvent" msprop:Generator_RowClassName="chucvuRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="macv" msprop:Generator_ColumnVarNameInTable="columnmacv" msprop:Generator_ColumnPropNameInRow="macv" msprop:Generator_ColumnPropNameInTable="macvColumn" msprop:Generator_UserColumnName="macv">
@@ -750,7 +793,7 @@ SELECT manv, id, matkhau FROM quyennv WHERE (id = @id) AND (manv = @manv)</Comma
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="ctphongdat" msprop:Generator_TableClassName="ctphongdatDataTable" msprop:Generator_TableVarName="tablectphongdat" msprop:Generator_RowChangedName="ctphongdatRowChanged" msprop:Generator_TablePropName="ctphongdat" msprop:Generator_RowDeletingName="ctphongdatRowDeleting" msprop:Generator_RowChangingName="ctphongdatRowChanging" msprop:Generator_RowEvHandlerName="ctphongdatRowChangeEventHandler" msprop:Generator_RowDeletedName="ctphongdatRowDeleted" msprop:Generator_RowClassName="ctphongdatRow" msprop:Generator_UserTableName="ctphongdat" msprop:Generator_RowEvArgName="ctphongdatRowChangeEvent">
+        <xs:element name="ctphongdat" msprop:Generator_TableClassName="ctphongdatDataTable" msprop:Generator_TableVarName="tablectphongdat" msprop:Generator_TablePropName="ctphongdat" msprop:Generator_RowDeletingName="ctphongdatRowDeleting" msprop:Generator_RowChangingName="ctphongdatRowChanging" msprop:Generator_RowEvHandlerName="ctphongdatRowChangeEventHandler" msprop:Generator_RowDeletedName="ctphongdatRowDeleted" msprop:Generator_UserTableName="ctphongdat" msprop:Generator_RowChangedName="ctphongdatRowChanged" msprop:Generator_RowEvArgName="ctphongdatRowChangeEvent" msprop:Generator_RowClassName="ctphongdatRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="madp" msprop:Generator_ColumnVarNameInTable="columnmadp" msprop:Generator_ColumnPropNameInRow="madp" msprop:Generator_ColumnPropNameInTable="madpColumn" msprop:Generator_UserColumnName="madp">
@@ -770,7 +813,7 @@ SELECT manv, id, matkhau FROM quyennv WHERE (id = @id) AND (manv = @manv)</Comma
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="datphong" msprop:Generator_TableClassName="datphongDataTable" msprop:Generator_TableVarName="tabledatphong" msprop:Generator_RowChangedName="datphongRowChanged" msprop:Generator_TablePropName="datphong" msprop:Generator_RowDeletingName="datphongRowDeleting" msprop:Generator_RowChangingName="datphongRowChanging" msprop:Generator_RowEvHandlerName="datphongRowChangeEventHandler" msprop:Generator_RowDeletedName="datphongRowDeleted" msprop:Generator_RowClassName="datphongRow" msprop:Generator_UserTableName="datphong" msprop:Generator_RowEvArgName="datphongRowChangeEvent">
+        <xs:element name="datphong" msprop:Generator_TableClassName="datphongDataTable" msprop:Generator_TableVarName="tabledatphong" msprop:Generator_TablePropName="datphong" msprop:Generator_RowDeletingName="datphongRowDeleting" msprop:Generator_RowChangingName="datphongRowChanging" msprop:Generator_RowEvHandlerName="datphongRowChangeEventHandler" msprop:Generator_RowDeletedName="datphongRowDeleted" msprop:Generator_UserTableName="datphong" msprop:Generator_RowChangedName="datphongRowChanged" msprop:Generator_RowEvArgName="datphongRowChangeEvent" msprop:Generator_RowClassName="datphongRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="madp" msprop:Generator_ColumnVarNameInTable="columnmadp" msprop:Generator_ColumnPropNameInRow="madp" msprop:Generator_ColumnPropNameInTable="madpColumn" msprop:Generator_UserColumnName="madp">
@@ -810,7 +853,7 @@ SELECT manv, id, matkhau FROM quyennv WHERE (id = @id) AND (manv = @manv)</Comma
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="hoadon" msprop:Generator_TableClassName="hoadonDataTable" msprop:Generator_TableVarName="tablehoadon" msprop:Generator_RowChangedName="hoadonRowChanged" msprop:Generator_TablePropName="hoadon" msprop:Generator_RowDeletingName="hoadonRowDeleting" msprop:Generator_RowChangingName="hoadonRowChanging" msprop:Generator_RowEvHandlerName="hoadonRowChangeEventHandler" msprop:Generator_RowDeletedName="hoadonRowDeleted" msprop:Generator_RowClassName="hoadonRow" msprop:Generator_UserTableName="hoadon" msprop:Generator_RowEvArgName="hoadonRowChangeEvent">
+        <xs:element name="hoadon" msprop:Generator_TableClassName="hoadonDataTable" msprop:Generator_TableVarName="tablehoadon" msprop:Generator_TablePropName="hoadon" msprop:Generator_RowDeletingName="hoadonRowDeleting" msprop:Generator_RowChangingName="hoadonRowChanging" msprop:Generator_RowEvHandlerName="hoadonRowChangeEventHandler" msprop:Generator_RowDeletedName="hoadonRowDeleted" msprop:Generator_UserTableName="hoadon" msprop:Generator_RowChangedName="hoadonRowChanged" msprop:Generator_RowEvArgName="hoadonRowChangeEvent" msprop:Generator_RowClassName="hoadonRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="mahd" msprop:Generator_ColumnVarNameInTable="columnmahd" msprop:Generator_ColumnPropNameInRow="mahd" msprop:Generator_ColumnPropNameInTable="mahdColumn" msprop:Generator_UserColumnName="mahd">
@@ -832,7 +875,7 @@ SELECT manv, id, matkhau FROM quyennv WHERE (id = @id) AND (manv = @manv)</Comma
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="khachhang" msprop:Generator_TableClassName="khachhangDataTable" msprop:Generator_TableVarName="tablekhachhang" msprop:Generator_RowChangedName="khachhangRowChanged" msprop:Generator_TablePropName="khachhang" msprop:Generator_RowDeletingName="khachhangRowDeleting" msprop:Generator_RowChangingName="khachhangRowChanging" msprop:Generator_RowEvHandlerName="khachhangRowChangeEventHandler" msprop:Generator_RowDeletedName="khachhangRowDeleted" msprop:Generator_RowClassName="khachhangRow" msprop:Generator_UserTableName="khachhang" msprop:Generator_RowEvArgName="khachhangRowChangeEvent">
+        <xs:element name="khachhang" msprop:Generator_TableClassName="khachhangDataTable" msprop:Generator_TableVarName="tablekhachhang" msprop:Generator_TablePropName="khachhang" msprop:Generator_RowDeletingName="khachhangRowDeleting" msprop:Generator_RowChangingName="khachhangRowChanging" msprop:Generator_RowEvHandlerName="khachhangRowChangeEventHandler" msprop:Generator_RowDeletedName="khachhangRowDeleted" msprop:Generator_UserTableName="khachhang" msprop:Generator_RowChangedName="khachhangRowChanged" msprop:Generator_RowEvArgName="khachhangRowChangeEvent" msprop:Generator_RowClassName="khachhangRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="makh" msprop:Generator_ColumnVarNameInTable="columnmakh" msprop:Generator_ColumnPropNameInRow="makh" msprop:Generator_ColumnPropNameInTable="makhColumn" msprop:Generator_UserColumnName="makh">
@@ -880,7 +923,7 @@ SELECT manv, id, matkhau FROM quyennv WHERE (id = @id) AND (manv = @manv)</Comma
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="loaiphong" msprop:Generator_TableClassName="loaiphongDataTable" msprop:Generator_TableVarName="tableloaiphong" msprop:Generator_RowChangedName="loaiphongRowChanged" msprop:Generator_TablePropName="loaiphong" msprop:Generator_RowDeletingName="loaiphongRowDeleting" msprop:Generator_RowChangingName="loaiphongRowChanging" msprop:Generator_RowEvHandlerName="loaiphongRowChangeEventHandler" msprop:Generator_RowDeletedName="loaiphongRowDeleted" msprop:Generator_RowClassName="loaiphongRow" msprop:Generator_UserTableName="loaiphong" msprop:Generator_RowEvArgName="loaiphongRowChangeEvent">
+        <xs:element name="loaiphong" msprop:Generator_TableClassName="loaiphongDataTable" msprop:Generator_TableVarName="tableloaiphong" msprop:Generator_TablePropName="loaiphong" msprop:Generator_RowDeletingName="loaiphongRowDeleting" msprop:Generator_RowChangingName="loaiphongRowChanging" msprop:Generator_RowEvHandlerName="loaiphongRowChangeEventHandler" msprop:Generator_RowDeletedName="loaiphongRowDeleted" msprop:Generator_UserTableName="loaiphong" msprop:Generator_RowChangedName="loaiphongRowChanged" msprop:Generator_RowEvArgName="loaiphongRowChangeEvent" msprop:Generator_RowClassName="loaiphongRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="tenlp" msprop:Generator_ColumnVarNameInTable="columntenlp" msprop:Generator_ColumnPropNameInRow="tenlp" msprop:Generator_ColumnPropNameInTable="tenlpColumn" msprop:Generator_UserColumnName="tenlp">
@@ -895,7 +938,7 @@ SELECT manv, id, matkhau FROM quyennv WHERE (id = @id) AND (manv = @manv)</Comma
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="nhanvien" msprop:Generator_TableClassName="nhanvienDataTable" msprop:Generator_TableVarName="tablenhanvien" msprop:Generator_RowChangedName="nhanvienRowChanged" msprop:Generator_TablePropName="nhanvien" msprop:Generator_RowDeletingName="nhanvienRowDeleting" msprop:Generator_RowChangingName="nhanvienRowChanging" msprop:Generator_RowEvHandlerName="nhanvienRowChangeEventHandler" msprop:Generator_RowDeletedName="nhanvienRowDeleted" msprop:Generator_RowClassName="nhanvienRow" msprop:Generator_UserTableName="nhanvien" msprop:Generator_RowEvArgName="nhanvienRowChangeEvent">
+        <xs:element name="nhanvien" msprop:Generator_TableClassName="nhanvienDataTable" msprop:Generator_TableVarName="tablenhanvien" msprop:Generator_TablePropName="nhanvien" msprop:Generator_RowDeletingName="nhanvienRowDeleting" msprop:Generator_RowChangingName="nhanvienRowChanging" msprop:Generator_RowEvHandlerName="nhanvienRowChangeEventHandler" msprop:Generator_RowDeletedName="nhanvienRowDeleted" msprop:Generator_UserTableName="nhanvien" msprop:Generator_RowChangedName="nhanvienRowChanged" msprop:Generator_RowEvArgName="nhanvienRowChangeEvent" msprop:Generator_RowClassName="nhanvienRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="manv" msprop:Generator_ColumnVarNameInTable="columnmanv" msprop:Generator_ColumnPropNameInRow="manv" msprop:Generator_ColumnPropNameInTable="manvColumn" msprop:Generator_UserColumnName="manv">
@@ -958,7 +1001,7 @@ SELECT manv, id, matkhau FROM quyennv WHERE (id = @id) AND (manv = @manv)</Comma
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="phanquyen" msprop:Generator_TableClassName="phanquyenDataTable" msprop:Generator_TableVarName="tablephanquyen" msprop:Generator_RowChangedName="phanquyenRowChanged" msprop:Generator_TablePropName="phanquyen" msprop:Generator_RowDeletingName="phanquyenRowDeleting" msprop:Generator_RowChangingName="phanquyenRowChanging" msprop:Generator_RowEvHandlerName="phanquyenRowChangeEventHandler" msprop:Generator_RowDeletedName="phanquyenRowDeleted" msprop:Generator_RowClassName="phanquyenRow" msprop:Generator_UserTableName="phanquyen" msprop:Generator_RowEvArgName="phanquyenRowChangeEvent">
+        <xs:element name="phanquyen" msprop:Generator_TableClassName="phanquyenDataTable" msprop:Generator_TableVarName="tablephanquyen" msprop:Generator_TablePropName="phanquyen" msprop:Generator_RowDeletingName="phanquyenRowDeleting" msprop:Generator_RowChangingName="phanquyenRowChanging" msprop:Generator_RowEvHandlerName="phanquyenRowChangeEventHandler" msprop:Generator_RowDeletedName="phanquyenRowDeleted" msprop:Generator_UserTableName="phanquyen" msprop:Generator_RowChangedName="phanquyenRowChanged" msprop:Generator_RowEvArgName="phanquyenRowChangeEvent" msprop:Generator_RowClassName="phanquyenRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id">
@@ -978,7 +1021,7 @@ SELECT manv, id, matkhau FROM quyennv WHERE (id = @id) AND (manv = @manv)</Comma
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="phong" msprop:Generator_TableClassName="phongDataTable" msprop:Generator_TableVarName="tablephong" msprop:Generator_RowChangedName="phongRowChanged" msprop:Generator_TablePropName="phong" msprop:Generator_RowDeletingName="phongRowDeleting" msprop:Generator_RowChangingName="phongRowChanging" msprop:Generator_RowEvHandlerName="phongRowChangeEventHandler" msprop:Generator_RowDeletedName="phongRowDeleted" msprop:Generator_RowClassName="phongRow" msprop:Generator_UserTableName="phong" msprop:Generator_RowEvArgName="phongRowChangeEvent">
+        <xs:element name="phong" msprop:Generator_TableClassName="phongDataTable" msprop:Generator_TableVarName="tablephong" msprop:Generator_TablePropName="phong" msprop:Generator_RowDeletingName="phongRowDeleting" msprop:Generator_RowChangingName="phongRowChanging" msprop:Generator_RowEvHandlerName="phongRowChangeEventHandler" msprop:Generator_RowDeletedName="phongRowDeleted" msprop:Generator_UserTableName="phong" msprop:Generator_RowChangedName="phongRowChanged" msprop:Generator_RowEvArgName="phongRowChangeEvent" msprop:Generator_RowClassName="phongRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="maphong" msprop:Generator_ColumnVarNameInTable="columnmaphong" msprop:Generator_ColumnPropNameInRow="maphong" msprop:Generator_ColumnPropNameInTable="maphongColumn" msprop:Generator_UserColumnName="maphong">
@@ -999,7 +1042,7 @@ SELECT manv, id, matkhau FROM quyennv WHERE (id = @id) AND (manv = @manv)</Comma
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="quyennv" msprop:Generator_TableClassName="quyennvDataTable" msprop:Generator_TableVarName="tablequyennv" msprop:Generator_RowChangedName="quyennvRowChanged" msprop:Generator_TablePropName="quyennv" msprop:Generator_RowDeletingName="quyennvRowDeleting" msprop:Generator_RowChangingName="quyennvRowChanging" msprop:Generator_RowEvHandlerName="quyennvRowChangeEventHandler" msprop:Generator_RowDeletedName="quyennvRowDeleted" msprop:Generator_RowClassName="quyennvRow" msprop:Generator_UserTableName="quyennv" msprop:Generator_RowEvArgName="quyennvRowChangeEvent">
+        <xs:element name="quyennv" msprop:Generator_TableClassName="quyennvDataTable" msprop:Generator_TableVarName="tablequyennv" msprop:Generator_TablePropName="quyennv" msprop:Generator_RowDeletingName="quyennvRowDeleting" msprop:Generator_RowChangingName="quyennvRowChanging" msprop:Generator_RowEvHandlerName="quyennvRowChangeEventHandler" msprop:Generator_RowDeletedName="quyennvRowDeleted" msprop:Generator_UserTableName="quyennv" msprop:Generator_RowChangedName="quyennvRowChanged" msprop:Generator_RowEvArgName="quyennvRowChangeEvent" msprop:Generator_RowClassName="quyennvRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="manv" msprop:Generator_ColumnVarNameInTable="columnmanv" msprop:Generator_ColumnPropNameInRow="manv" msprop:Generator_ColumnPropNameInTable="manvColumn" msprop:Generator_UserColumnName="manv">
@@ -1026,7 +1069,7 @@ SELECT manv, id, matkhau FROM quyennv WHERE (id = @id) AND (manv = @manv)</Comma
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="inhoadon" msprop:Generator_TableClassName="inhoadonDataTable" msprop:Generator_TableVarName="tableinhoadon" msprop:Generator_RowChangedName="inhoadonRowChanged" msprop:Generator_TablePropName="inhoadon" msprop:Generator_RowDeletingName="inhoadonRowDeleting" msprop:Generator_RowChangingName="inhoadonRowChanging" msprop:Generator_RowEvHandlerName="inhoadonRowChangeEventHandler" msprop:Generator_RowDeletedName="inhoadonRowDeleted" msprop:Generator_RowClassName="inhoadonRow" msprop:Generator_UserTableName="inhoadon" msprop:Generator_RowEvArgName="inhoadonRowChangeEvent">
+        <xs:element name="inhoadon" msprop:Generator_TableClassName="inhoadonDataTable" msprop:Generator_TableVarName="tableinhoadon" msprop:Generator_TablePropName="inhoadon" msprop:Generator_RowDeletingName="inhoadonRowDeleting" msprop:Generator_RowChangingName="inhoadonRowChanging" msprop:Generator_RowEvHandlerName="inhoadonRowChangeEventHandler" msprop:Generator_RowDeletedName="inhoadonRowDeleted" msprop:Generator_UserTableName="inhoadon" msprop:Generator_RowChangedName="inhoadonRowChanged" msprop:Generator_RowEvArgName="inhoadonRowChangeEvent" msprop:Generator_RowClassName="inhoadonRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ngaylap" msprop:Generator_ColumnVarNameInTable="columnngaylap" msprop:Generator_ColumnPropNameInRow="ngaylap" msprop:Generator_ColumnPropNameInTable="ngaylapColumn" msprop:Generator_UserColumnName="ngaylap" type="xs:dateTime" />
@@ -1073,7 +1116,7 @@ SELECT manv, id, matkhau FROM quyennv WHERE (id = @id) AND (manv = @manv)</Comma
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="getdskh" msprop:Generator_TableClassName="getdskhDataTable" msprop:Generator_TableVarName="tablegetdskh" msprop:Generator_RowChangedName="getdskhRowChanged" msprop:Generator_TablePropName="getdskh" msprop:Generator_RowDeletingName="getdskhRowDeleting" msprop:Generator_RowChangingName="getdskhRowChanging" msprop:Generator_RowEvHandlerName="getdskhRowChangeEventHandler" msprop:Generator_RowDeletedName="getdskhRowDeleted" msprop:Generator_RowClassName="getdskhRow" msprop:Generator_UserTableName="getdskh" msprop:Generator_RowEvArgName="getdskhRowChangeEvent">
+        <xs:element name="getdskh" msprop:Generator_TableClassName="getdskhDataTable" msprop:Generator_TableVarName="tablegetdskh" msprop:Generator_TablePropName="getdskh" msprop:Generator_RowDeletingName="getdskhRowDeleting" msprop:Generator_RowChangingName="getdskhRowChanging" msprop:Generator_RowEvHandlerName="getdskhRowChangeEventHandler" msprop:Generator_RowDeletedName="getdskhRowDeleted" msprop:Generator_UserTableName="getdskh" msprop:Generator_RowChangedName="getdskhRowChanged" msprop:Generator_RowEvArgName="getdskhRowChangeEvent" msprop:Generator_RowClassName="getdskhRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="makh" msprop:Generator_ColumnVarNameInTable="columnmakh" msprop:Generator_ColumnPropNameInRow="makh" msprop:Generator_ColumnPropNameInTable="makhColumn" msprop:Generator_UserColumnName="makh">
@@ -1121,7 +1164,7 @@ SELECT manv, id, matkhau FROM quyennv WHERE (id = @id) AND (manv = @manv)</Comma
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="getdsnv" msprop:Generator_TableClassName="getdsnvDataTable" msprop:Generator_TableVarName="tablegetdsnv" msprop:Generator_RowChangedName="getdsnvRowChanged" msprop:Generator_TablePropName="getdsnv" msprop:Generator_RowDeletingName="getdsnvRowDeleting" msprop:Generator_RowChangingName="getdsnvRowChanging" msprop:Generator_RowEvHandlerName="getdsnvRowChangeEventHandler" msprop:Generator_RowDeletedName="getdsnvRowDeleted" msprop:Generator_RowClassName="getdsnvRow" msprop:Generator_UserTableName="getdsnv" msprop:Generator_RowEvArgName="getdsnvRowChangeEvent">
+        <xs:element name="getdsnv" msprop:Generator_TableClassName="getdsnvDataTable" msprop:Generator_TableVarName="tablegetdsnv" msprop:Generator_TablePropName="getdsnv" msprop:Generator_RowDeletingName="getdsnvRowDeleting" msprop:Generator_RowChangingName="getdsnvRowChanging" msprop:Generator_RowEvHandlerName="getdsnvRowChangeEventHandler" msprop:Generator_RowDeletedName="getdsnvRowDeleted" msprop:Generator_UserTableName="getdsnv" msprop:Generator_RowChangedName="getdsnvRowChanged" msprop:Generator_RowEvArgName="getdsnvRowChangeEvent" msprop:Generator_RowClassName="getdsnvRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="manv" msprop:Generator_ColumnVarNameInTable="columnmanv" msprop:Generator_ColumnPropNameInRow="manv" msprop:Generator_ColumnPropNameInTable="manvColumn" msprop:Generator_UserColumnName="manv">
@@ -1184,7 +1227,7 @@ SELECT manv, id, matkhau FROM quyennv WHERE (id = @id) AND (manv = @manv)</Comma
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="gethoadon" msprop:Generator_TableClassName="gethoadonDataTable" msprop:Generator_TableVarName="tablegethoadon" msprop:Generator_RowChangedName="gethoadonRowChanged" msprop:Generator_TablePropName="gethoadon" msprop:Generator_RowDeletingName="gethoadonRowDeleting" msprop:Generator_RowChangingName="gethoadonRowChanging" msprop:Generator_RowEvHandlerName="gethoadonRowChangeEventHandler" msprop:Generator_RowDeletedName="gethoadonRowDeleted" msprop:Generator_RowClassName="gethoadonRow" msprop:Generator_UserTableName="gethoadon" msprop:Generator_RowEvArgName="gethoadonRowChangeEvent">
+        <xs:element name="gethoadon" msprop:Generator_TableClassName="gethoadonDataTable" msprop:Generator_TableVarName="tablegethoadon" msprop:Generator_TablePropName="gethoadon" msprop:Generator_RowDeletingName="gethoadonRowDeleting" msprop:Generator_RowChangingName="gethoadonRowChanging" msprop:Generator_RowEvHandlerName="gethoadonRowChangeEventHandler" msprop:Generator_RowDeletedName="gethoadonRowDeleted" msprop:Generator_UserTableName="gethoadon" msprop:Generator_RowChangedName="gethoadonRowChanged" msprop:Generator_RowEvArgName="gethoadonRowChangeEvent" msprop:Generator_RowClassName="gethoadonRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="mahd" msprop:Generator_ColumnVarNameInTable="columnmahd" msprop:Generator_ColumnPropNameInRow="mahd" msprop:Generator_ColumnPropNameInTable="mahdColumn" msprop:Generator_UserColumnName="mahd">
@@ -1226,6 +1269,67 @@ SELECT manv, id, matkhau FROM quyennv WHERE (id = @id) AND (manv = @manv)</Comma
               <xs:element name="soluong" msprop:Generator_ColumnVarNameInTable="columnsoluong" msprop:Generator_ColumnPropNameInRow="soluong" msprop:Generator_ColumnPropNameInTable="soluongColumn" msprop:Generator_UserColumnName="soluong" type="xs:int" />
               <xs:element name="ngayden" msprop:Generator_ColumnVarNameInTable="columnngayden" msprop:Generator_ColumnPropNameInRow="ngayden" msprop:Generator_ColumnPropNameInTable="ngaydenColumn" msprop:Generator_UserColumnName="ngayden" type="xs:dateTime" />
               <xs:element name="ngaydi" msprop:Generator_ColumnVarNameInTable="columnngaydi" msprop:Generator_ColumnPropNameInRow="ngaydi" msprop:Generator_ColumnPropNameInTable="ngaydiColumn" msprop:Generator_UserColumnName="ngaydi" type="xs:dateTime" />
+              <xs:element name="tongtien" msprop:Generator_ColumnVarNameInTable="columntongtien" msprop:Generator_ColumnPropNameInRow="tongtien" msprop:Generator_ColumnPropNameInTable="tongtienColumn" msprop:Generator_UserColumnName="tongtien" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="thongtindat" msprop:Generator_TableClassName="thongtindatDataTable" msprop:Generator_TableVarName="tablethongtindat" msprop:Generator_TablePropName="thongtindat" msprop:Generator_RowDeletingName="thongtindatRowDeleting" msprop:Generator_RowChangingName="thongtindatRowChanging" msprop:Generator_RowEvHandlerName="thongtindatRowChangeEventHandler" msprop:Generator_RowDeletedName="thongtindatRowDeleted" msprop:Generator_UserTableName="thongtindat" msprop:Generator_RowChangedName="thongtindatRowChanged" msprop:Generator_RowEvArgName="thongtindatRowChangeEvent" msprop:Generator_RowClassName="thongtindatRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="hoten" msprop:Generator_ColumnVarNameInTable="columnhoten" msprop:Generator_ColumnPropNameInRow="hoten" msprop:Generator_ColumnPropNameInTable="hotenColumn" msprop:Generator_UserColumnName="hoten">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="makh" msprop:Generator_ColumnVarNameInTable="columnmakh" msprop:Generator_ColumnPropNameInRow="makh" msprop:Generator_ColumnPropNameInTable="makhColumn" msprop:Generator_UserColumnName="makh">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ngayden" msprop:Generator_ColumnVarNameInTable="columnngayden" msprop:Generator_ColumnPropNameInRow="ngayden" msprop:Generator_ColumnPropNameInTable="ngaydenColumn" msprop:Generator_UserColumnName="ngayden" type="xs:dateTime" />
+              <xs:element name="ngaydi" msprop:Generator_ColumnVarNameInTable="columnngaydi" msprop:Generator_ColumnPropNameInRow="ngaydi" msprop:Generator_ColumnPropNameInTable="ngaydiColumn" msprop:Generator_UserColumnName="ngaydi" type="xs:dateTime" />
+              <xs:element name="madp" msprop:Generator_ColumnVarNameInTable="columnmadp" msprop:Generator_ColumnPropNameInRow="madp" msprop:Generator_ColumnPropNameInTable="madpColumn" msprop:Generator_UserColumnName="madp">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="soluong" msprop:Generator_ColumnVarNameInTable="columnsoluong" msprop:Generator_ColumnPropNameInRow="soluong" msprop:Generator_ColumnPropNameInTable="soluongColumn" msprop:Generator_UserColumnName="soluong" type="xs:int" />
+              <xs:element name="tiendatcoc" msprop:Generator_ColumnVarNameInTable="columntiendatcoc" msprop:Generator_ColumnPropNameInRow="tiendatcoc" msprop:Generator_ColumnPropNameInTable="tiendatcocColumn" msprop:Generator_UserColumnName="tiendatcoc" type="xs:int" minOccurs="0" />
+              <xs:element name="trangthai" msprop:Generator_ColumnVarNameInTable="columntrangthai" msprop:Generator_ColumnPropNameInRow="trangthai" msprop:Generator_ColumnPropNameInTable="trangthaiColumn" msprop:Generator_UserColumnName="trangthai" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="doanhthu" msprop:Generator_TableClassName="doanhthuDataTable" msprop:Generator_TableVarName="tabledoanhthu" msprop:Generator_TablePropName="doanhthu" msprop:Generator_RowDeletingName="doanhthuRowDeleting" msprop:Generator_RowChangingName="doanhthuRowChanging" msprop:Generator_RowEvHandlerName="doanhthuRowChangeEventHandler" msprop:Generator_RowDeletedName="doanhthuRowDeleted" msprop:Generator_UserTableName="doanhthu" msprop:Generator_RowChangedName="doanhthuRowChanged" msprop:Generator_RowEvArgName="doanhthuRowChangeEvent" msprop:Generator_RowClassName="doanhthuRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ngaylap" msprop:Generator_ColumnVarNameInTable="columnngaylap" msprop:Generator_ColumnPropNameInRow="ngaylap" msprop:Generator_ColumnPropNameInTable="ngaylapColumn" msprop:Generator_UserColumnName="ngaylap" type="xs:dateTime" />
+              <xs:element name="madp" msprop:Generator_ColumnVarNameInTable="columnmadp" msprop:Generator_ColumnPropNameInRow="madp" msprop:Generator_ColumnPropNameInTable="madpColumn" msprop:Generator_UserColumnName="madp">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mahd" msprop:Generator_ColumnVarNameInTable="columnmahd" msprop:Generator_ColumnPropNameInRow="mahd" msprop:Generator_ColumnPropNameInTable="mahdColumn" msprop:Generator_UserColumnName="mahd">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tenlp" msprop:Generator_ColumnVarNameInTable="columntenlp" msprop:Generator_ColumnPropNameInRow="tenlp" msprop:Generator_ColumnPropNameInTable="tenlpColumn" msprop:Generator_UserColumnName="tenlp">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
               <xs:element name="tongtien" msprop:Generator_ColumnVarNameInTable="columntongtien" msprop:Generator_ColumnPropNameInRow="tongtien" msprop:Generator_ColumnPropNameInTable="tongtienColumn" msprop:Generator_UserColumnName="tongtien" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
@@ -1282,19 +1386,27 @@ SELECT manv, id, matkhau FROM quyennv WHERE (id = @id) AND (manv = @manv)</Comma
       <xs:selector xpath=".//mstns:getdsnv" />
       <xs:field xpath="mstns:manv" />
     </xs:unique>
+    <xs:unique name="thongtindat_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:thongtindat" />
+      <xs:field xpath="mstns:madp" />
+    </xs:unique>
+    <xs:unique name="doanhthu_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:doanhthu" />
+      <xs:field xpath="mstns:mahd" />
+    </xs:unique>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK__ctphongda__mapho__440B1D61" msdata:parent="phong" msdata:child="ctphongdat" msdata:parentkey="maphong" msdata:childkey="maphong" msprop:Generator_UserChildTable="ctphongdat" msprop:Generator_ChildPropName="GetctphongdatRows" msprop:Generator_UserRelationName="FK__ctphongda__mapho__440B1D61" msprop:Generator_ParentPropName="phongRow" msprop:Generator_RelationVarName="relationFK__ctphongda__mapho__440B1D61" msprop:Generator_UserParentTable="phong" />
-      <msdata:Relationship name="FK__ctphongdat__madp__4316F928" msdata:parent="datphong" msdata:child="ctphongdat" msdata:parentkey="madp" msdata:childkey="madp" msprop:Generator_UserChildTable="ctphongdat" msprop:Generator_ChildPropName="GetctphongdatRows" msprop:Generator_UserRelationName="FK__ctphongdat__madp__4316F928" msprop:Generator_ParentPropName="datphongRow" msprop:Generator_RelationVarName="relationFK__ctphongdat__madp__4316F928" msprop:Generator_UserParentTable="datphong" />
-      <msdata:Relationship name="FK__datphong__makh__3C69FB99" msdata:parent="khachhang" msdata:child="datphong" msdata:parentkey="makh" msdata:childkey="makh" msprop:Generator_UserChildTable="datphong" msprop:Generator_ChildPropName="GetdatphongRows" msprop:Generator_UserRelationName="FK__datphong__makh__3C69FB99" msprop:Generator_ParentPropName="khachhangRow" msprop:Generator_RelationVarName="relationFK__datphong__makh__3C69FB99" msprop:Generator_UserParentTable="khachhang" />
-      <msdata:Relationship name="FK__datphong__manv__3B75D760" msdata:parent="nhanvien" msdata:child="datphong" msdata:parentkey="manv" msdata:childkey="manv" msprop:Generator_UserChildTable="datphong" msprop:Generator_ChildPropName="GetdatphongRows" msprop:Generator_UserRelationName="FK__datphong__manv__3B75D760" msprop:Generator_ParentPropName="nhanvienRow" msprop:Generator_RelationVarName="relationFK__datphong__manv__3B75D760" msprop:Generator_UserParentTable="nhanvien" />
-      <msdata:Relationship name="FK__datphong__tenlp__3D5E1FD2" msdata:parent="loaiphong" msdata:child="datphong" msdata:parentkey="tenlp" msdata:childkey="tenlp" msprop:Generator_UserChildTable="datphong" msprop:Generator_ChildPropName="GetdatphongRows" msprop:Generator_UserRelationName="FK__datphong__tenlp__3D5E1FD2" msprop:Generator_ParentPropName="loaiphongRow" msprop:Generator_RelationVarName="relationFK__datphong__tenlp__3D5E1FD2" msprop:Generator_UserParentTable="loaiphong" />
-      <msdata:Relationship name="FK__hoadon__madp__46E78A0C" msdata:parent="datphong" msdata:child="hoadon" msdata:parentkey="madp" msdata:childkey="madp" msprop:Generator_UserChildTable="hoadon" msprop:Generator_ChildPropName="GethoadonRows" msprop:Generator_UserRelationName="FK__hoadon__madp__46E78A0C" msprop:Generator_RelationVarName="relationFK__hoadon__madp__46E78A0C" msprop:Generator_UserParentTable="datphong" msprop:Generator_ParentPropName="datphongRow" />
-      <msdata:Relationship name="FK__nhanvien__macv__286302EC" msdata:parent="chucvu" msdata:child="nhanvien" msdata:parentkey="macv" msdata:childkey="macv" msprop:Generator_UserChildTable="nhanvien" msprop:Generator_ChildPropName="GetnhanvienRows" msprop:Generator_UserRelationName="FK__nhanvien__macv__286302EC" msprop:Generator_RelationVarName="relationFK__nhanvien__macv__286302EC" msprop:Generator_UserParentTable="chucvu" msprop:Generator_ParentPropName="chucvuRow" />
-      <msdata:Relationship name="FK__phong__tenlp__31EC6D26" msdata:parent="loaiphong" msdata:child="phong" msdata:parentkey="tenlp" msdata:childkey="tenlp" msprop:Generator_UserChildTable="phong" msprop:Generator_ChildPropName="GetphongRows" msprop:Generator_UserRelationName="FK__phong__tenlp__31EC6D26" msprop:Generator_RelationVarName="relationFK__phong__tenlp__31EC6D26" msprop:Generator_UserParentTable="loaiphong" msprop:Generator_ParentPropName="loaiphongRow" />
-      <msdata:Relationship name="FK__quyennv__id__4D94879B" msdata:parent="phanquyen" msdata:child="quyennv" msdata:parentkey="id" msdata:childkey="id" msprop:Generator_UserChildTable="quyennv" msprop:Generator_ChildPropName="GetquyennvRows" msprop:Generator_UserRelationName="FK__quyennv__id__4D94879B" msprop:Generator_RelationVarName="relationFK__quyennv__id__4D94879B" msprop:Generator_UserParentTable="phanquyen" msprop:Generator_ParentPropName="phanquyenRow" />
-      <msdata:Relationship name="FK__quyennv__manv__4CA06362" msdata:parent="nhanvien" msdata:child="quyennv" msdata:parentkey="manv" msdata:childkey="manv" msprop:Generator_UserChildTable="quyennv" msprop:Generator_ChildPropName="GetquyennvRows" msprop:Generator_UserRelationName="FK__quyennv__manv__4CA06362" msprop:Generator_RelationVarName="relationFK__quyennv__manv__4CA06362" msprop:Generator_UserParentTable="nhanvien" msprop:Generator_ParentPropName="nhanvienRow" />
+      <msdata:Relationship name="FK__ctphongda__mapho__440B1D61" msdata:parent="phong" msdata:child="ctphongdat" msdata:parentkey="maphong" msdata:childkey="maphong" msprop:Generator_UserChildTable="ctphongdat" msprop:Generator_ChildPropName="GetctphongdatRows" msprop:Generator_UserRelationName="FK__ctphongda__mapho__440B1D61" msprop:Generator_RelationVarName="relationFK__ctphongda__mapho__440B1D61" msprop:Generator_UserParentTable="phong" msprop:Generator_ParentPropName="phongRow" />
+      <msdata:Relationship name="FK__ctphongdat__madp__4316F928" msdata:parent="datphong" msdata:child="ctphongdat" msdata:parentkey="madp" msdata:childkey="madp" msprop:Generator_UserChildTable="ctphongdat" msprop:Generator_ChildPropName="GetctphongdatRows" msprop:Generator_UserRelationName="FK__ctphongdat__madp__4316F928" msprop:Generator_RelationVarName="relationFK__ctphongdat__madp__4316F928" msprop:Generator_UserParentTable="datphong" msprop:Generator_ParentPropName="datphongRow" />
+      <msdata:Relationship name="FK__datphong__makh__3C69FB99" msdata:parent="khachhang" msdata:child="datphong" msdata:parentkey="makh" msdata:childkey="makh" msprop:Generator_UserChildTable="datphong" msprop:Generator_ChildPropName="GetdatphongRows" msprop:Generator_UserRelationName="FK__datphong__makh__3C69FB99" msprop:Generator_RelationVarName="relationFK__datphong__makh__3C69FB99" msprop:Generator_UserParentTable="khachhang" msprop:Generator_ParentPropName="khachhangRow" />
+      <msdata:Relationship name="FK__datphong__manv__3B75D760" msdata:parent="nhanvien" msdata:child="datphong" msdata:parentkey="manv" msdata:childkey="manv" msprop:Generator_UserChildTable="datphong" msprop:Generator_ChildPropName="GetdatphongRows" msprop:Generator_UserRelationName="FK__datphong__manv__3B75D760" msprop:Generator_RelationVarName="relationFK__datphong__manv__3B75D760" msprop:Generator_UserParentTable="nhanvien" msprop:Generator_ParentPropName="nhanvienRow" />
+      <msdata:Relationship name="FK__datphong__tenlp__3D5E1FD2" msdata:parent="loaiphong" msdata:child="datphong" msdata:parentkey="tenlp" msdata:childkey="tenlp" msprop:Generator_UserChildTable="datphong" msprop:Generator_ChildPropName="GetdatphongRows" msprop:Generator_UserRelationName="FK__datphong__tenlp__3D5E1FD2" msprop:Generator_RelationVarName="relationFK__datphong__tenlp__3D5E1FD2" msprop:Generator_UserParentTable="loaiphong" msprop:Generator_ParentPropName="loaiphongRow" />
+      <msdata:Relationship name="FK__hoadon__madp__46E78A0C" msdata:parent="datphong" msdata:child="hoadon" msdata:parentkey="madp" msdata:childkey="madp" msprop:Generator_UserChildTable="hoadon" msprop:Generator_ChildPropName="GethoadonRows" msprop:Generator_UserRelationName="FK__hoadon__madp__46E78A0C" msprop:Generator_ParentPropName="datphongRow" msprop:Generator_RelationVarName="relationFK__hoadon__madp__46E78A0C" msprop:Generator_UserParentTable="datphong" />
+      <msdata:Relationship name="FK__nhanvien__macv__286302EC" msdata:parent="chucvu" msdata:child="nhanvien" msdata:parentkey="macv" msdata:childkey="macv" msprop:Generator_UserChildTable="nhanvien" msprop:Generator_ChildPropName="GetnhanvienRows" msprop:Generator_UserRelationName="FK__nhanvien__macv__286302EC" msprop:Generator_ParentPropName="chucvuRow" msprop:Generator_RelationVarName="relationFK__nhanvien__macv__286302EC" msprop:Generator_UserParentTable="chucvu" />
+      <msdata:Relationship name="FK__phong__tenlp__31EC6D26" msdata:parent="loaiphong" msdata:child="phong" msdata:parentkey="tenlp" msdata:childkey="tenlp" msprop:Generator_UserChildTable="phong" msprop:Generator_ChildPropName="GetphongRows" msprop:Generator_UserRelationName="FK__phong__tenlp__31EC6D26" msprop:Generator_ParentPropName="loaiphongRow" msprop:Generator_RelationVarName="relationFK__phong__tenlp__31EC6D26" msprop:Generator_UserParentTable="loaiphong" />
+      <msdata:Relationship name="FK__quyennv__id__4D94879B" msdata:parent="phanquyen" msdata:child="quyennv" msdata:parentkey="id" msdata:childkey="id" msprop:Generator_UserChildTable="quyennv" msprop:Generator_ChildPropName="GetquyennvRows" msprop:Generator_UserRelationName="FK__quyennv__id__4D94879B" msprop:Generator_ParentPropName="phanquyenRow" msprop:Generator_RelationVarName="relationFK__quyennv__id__4D94879B" msprop:Generator_UserParentTable="phanquyen" />
+      <msdata:Relationship name="FK__quyennv__manv__4CA06362" msdata:parent="nhanvien" msdata:child="quyennv" msdata:parentkey="manv" msdata:childkey="manv" msprop:Generator_UserChildTable="quyennv" msprop:Generator_ChildPropName="GetquyennvRows" msprop:Generator_UserRelationName="FK__quyennv__manv__4CA06362" msprop:Generator_ParentPropName="nhanvienRow" msprop:Generator_RelationVarName="relationFK__quyennv__manv__4CA06362" msprop:Generator_UserParentTable="nhanvien" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

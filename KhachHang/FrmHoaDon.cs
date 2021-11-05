@@ -19,10 +19,9 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             InitializeComponent();
         }
 
-
         private void btnInHoaDon_Click(object sender, EventArgs e)
         {
-            FrmInHoaDon frm1 = new FrmInHoaDon();
+            FrmInHoaDon frm1 = new FrmInHoaDon(txtMaHoaDon.Text);
             frm1.Show();
         }
 
@@ -126,6 +125,15 @@ namespace Quan_Li_Khach_San_NET.KhachHang
         private void btnThoat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btmTimKiemHoaDon_Click(object sender, EventArgs e)
+        {
+            DataTable dta = new DataTable();
+            string sql_tim_kiem;
+            sql_tim_kiem = "Select * from hoadon where mahd like '%" + txtMaHoaDon.Text + "%'";
+            dta = kn.Lay_DulieuBang(sql_tim_kiem);
+            dataGridViewHoadon.DataSource = dta;
         }
     }
 }

@@ -18,6 +18,13 @@ namespace Quan_Li_Khach_San_NET
             InitializeComponent();
         }
 
+        string maHoaDon;
+        public FrmInHoaDon(string maHD)
+        {
+            InitializeComponent();
+            this.maHoaDon = maHD;
+        }
+
         Ketnoi kn = new Ketnoi();
 
         private void FrmInHoaDon_Load(object sender, EventArgs e)
@@ -26,7 +33,7 @@ namespace Quan_Li_Khach_San_NET
             //dta = kn.Lay_DulieuBang("Select * from NHANVIEN where ma_CV like 'CV3'"); 
             //BaoCaoNhanVien baoCaoNV = new BaoCaoNhanVien(); 
             // khCri tao bao cao 
-            dta = kn.Lay_DulieuBang("Select * from hoadon ");
+            dta = kn.Lay_DulieuBang("Select * from inhoadon where mahd ='" + maHoaDon + "'");
             RpHoaDon InHoaDon = new RpHoaDon();  // khoi tao bao cao 
             InHoaDon.SetDataSource(dta);
             CRVHoaDon.ReportSource = InHoaDon;
