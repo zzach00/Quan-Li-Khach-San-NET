@@ -53,6 +53,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSetNew.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetNew.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FrmBaoCaoDoanhThu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -246,6 +251,17 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>RpInThongTinDP.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="DataSetNew.xsc">
+      <DependentUpon>DataSetNew.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetNew.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetNew.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetNew.xss">
+      <DependentUpon>DataSetNew.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
