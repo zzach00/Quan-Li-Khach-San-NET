@@ -41,13 +41,15 @@ namespace Quan_Li_Khach_San_NET
             // 
             // panel1
             // 
+            this.panel1.AutoSize = true;
             this.panel1.Controls.Add(this.cboTinhTrang);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(2, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1126, 127);
+            this.panel1.Size = new System.Drawing.Size(1505, 125);
             this.panel1.TabIndex = 1;
             // 
             // cboTinhTrang
@@ -57,10 +59,10 @@ namespace Quan_Li_Khach_San_NET
             this.cboTinhTrang.Items.AddRange(new object[] {
             "0",
             "1"});
-            this.cboTinhTrang.Location = new System.Drawing.Point(350, 70);
-            this.cboTinhTrang.Margin = new System.Windows.Forms.Padding(2);
+            this.cboTinhTrang.Location = new System.Drawing.Point(467, 86);
+            this.cboTinhTrang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboTinhTrang.Name = "cboTinhTrang";
-            this.cboTinhTrang.Size = new System.Drawing.Size(92, 30);
+            this.cboTinhTrang.Size = new System.Drawing.Size(121, 37);
             this.cboTinhTrang.TabIndex = 9;
             this.cboTinhTrang.SelectedIndexChanged += new System.EventHandler(this.cboTinhTrang_SelectedIndexChanged);
             // 
@@ -68,10 +70,9 @@ namespace Quan_Li_Khach_San_NET
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(202, 72);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(269, 89);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 24);
+            this.label2.Size = new System.Drawing.Size(121, 29);
             this.label2.TabIndex = 0;
             this.label2.Text = "Tình trạng";
             // 
@@ -79,50 +80,53 @@ namespace Quan_Li_Khach_San_NET
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(30, 16);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(40, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 26);
+            this.label1.Size = new System.Drawing.Size(147, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tùy chỉnh";
             // 
             // panel2
             // 
+            this.panel2.AutoSize = true;
             this.panel2.Controls.Add(this.CRV);
-            this.panel2.Location = new System.Drawing.Point(2, 132);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 125);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1126, 442);
+            this.panel2.Size = new System.Drawing.Size(1505, 595);
             this.panel2.TabIndex = 2;
             // 
             // CRV
             // 
             this.CRV.ActiveViewIndex = -1;
+            this.CRV.AutoSize = true;
             this.CRV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.CRV.Cursor = System.Windows.Forms.Cursors.Default;
             this.CRV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CRV.Location = new System.Drawing.Point(0, 0);
-            this.CRV.Margin = new System.Windows.Forms.Padding(2);
+            this.CRV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CRV.Name = "CRV";
-            this.CRV.Size = new System.Drawing.Size(1126, 442);
+            this.CRV.Size = new System.Drawing.Size(1505, 595);
             this.CRV.TabIndex = 1;
-            this.CRV.ToolPanelWidth = 150;
             // 
             // FrmBaoCaoPhong
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1129, 585);
+            this.ClientSize = new System.Drawing.Size(1505, 720);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmBaoCaoPhong";
             this.Text = "FrmBaoCaoPhong";
             this.Load += new System.EventHandler(this.FrmBaoCaoPhong_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

@@ -112,7 +112,7 @@ namespace Quan_Li_Khach_San_NET
             this.btnThoat.Location = new System.Drawing.Point(927, 441);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(163, 52);
+            this.btnThoat.Size = new System.Drawing.Size(257, 52);
             this.btnThoat.TabIndex = 16;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -124,7 +124,7 @@ namespace Quan_Li_Khach_San_NET
             this.btnXoa.Location = new System.Drawing.Point(927, 358);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(163, 52);
+            this.btnXoa.Size = new System.Drawing.Size(257, 52);
             this.btnXoa.TabIndex = 15;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -136,7 +136,7 @@ namespace Quan_Li_Khach_San_NET
             this.btnLuu.Location = new System.Drawing.Point(927, 274);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(163, 52);
+            this.btnLuu.Size = new System.Drawing.Size(257, 52);
             this.btnLuu.TabIndex = 14;
             this.btnLuu.Text = "Lưu thông tin";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -148,7 +148,7 @@ namespace Quan_Li_Khach_San_NET
             this.btnSua.Location = new System.Drawing.Point(927, 192);
             this.btnSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(163, 52);
+            this.btnSua.Size = new System.Drawing.Size(257, 52);
             this.btnSua.TabIndex = 13;
             this.btnSua.Text = "Sửa thông tin";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -160,7 +160,7 @@ namespace Quan_Li_Khach_San_NET
             this.btnTaoMoi.Location = new System.Drawing.Point(927, 114);
             this.btnTaoMoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTaoMoi.Name = "btnTaoMoi";
-            this.btnTaoMoi.Size = new System.Drawing.Size(163, 52);
+            this.btnTaoMoi.Size = new System.Drawing.Size(257, 52);
             this.btnTaoMoi.TabIndex = 12;
             this.btnTaoMoi.Text = "Tạo mới";
             this.btnTaoMoi.UseVisualStyleBackColor = true;
@@ -197,7 +197,7 @@ namespace Quan_Li_Khach_San_NET
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1181, 628);
+            this.ClientSize = new System.Drawing.Size(1256, 628);
             this.Controls.Add(this.dataGridViewLoaiPhong);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -214,6 +214,7 @@ namespace Quan_Li_Khach_San_NET
             this.Controls.Add(this.txtTenLoaiPhong);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmLoaiPhong";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FrmLoaiPhong_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLoaiPhong)).EndInit();
