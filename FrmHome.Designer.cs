@@ -60,6 +60,7 @@ namespace Quan_Li_Khach_San_NET
             this.rbtnTenPhong = new System.Windows.Forms.RadioButton();
             this.cboMaNhanVien = new System.Windows.Forms.ComboBox();
             this.txtKhachHang = new System.Windows.Forms.TextBox();
+            this.chiTiếtPhòngĐặtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTimKiemThongTin)).BeginInit();
@@ -120,6 +121,8 @@ namespace Quan_Li_Khach_San_NET
             // 
             // đặtPhòngToolStripMenuItem
             // 
+            this.đặtPhòngToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.chiTiếtPhòngĐặtToolStripMenuItem});
             this.đặtPhòngToolStripMenuItem.Name = "đặtPhòngToolStripMenuItem";
             this.đặtPhòngToolStripMenuItem.Size = new System.Drawing.Size(339, 36);
             this.đặtPhòngToolStripMenuItem.Text = "Đặt phòng";
@@ -140,18 +143,19 @@ namespace Quan_Li_Khach_San_NET
             this.phòngToolStripMenuItem.Name = "phòngToolStripMenuItem";
             this.phòngToolStripMenuItem.Size = new System.Drawing.Size(98, 36);
             this.phòngToolStripMenuItem.Text = "Phòng";
+            this.phòngToolStripMenuItem.Click += new System.EventHandler(this.phòngToolStripMenuItem_Click);
             // 
             // stripMenuLoaiPhong
             // 
             this.stripMenuLoaiPhong.Name = "stripMenuLoaiPhong";
-            this.stripMenuLoaiPhong.Size = new System.Drawing.Size(291, 36);
+            this.stripMenuLoaiPhong.Size = new System.Drawing.Size(299, 36);
             this.stripMenuLoaiPhong.Text = "Loại phòng";
             this.stripMenuLoaiPhong.Click += new System.EventHandler(this.stripMenuLoaiPhong_Click);
             // 
             // tìnhTrạngPhòngToolStripMenuItem
             // 
             this.tìnhTrạngPhòngToolStripMenuItem.Name = "tìnhTrạngPhòngToolStripMenuItem";
-            this.tìnhTrạngPhòngToolStripMenuItem.Size = new System.Drawing.Size(291, 36);
+            this.tìnhTrạngPhòngToolStripMenuItem.Size = new System.Drawing.Size(299, 36);
             this.tìnhTrạngPhòngToolStripMenuItem.Text = "Tình trạng phòng";
             this.tìnhTrạngPhòngToolStripMenuItem.Click += new System.EventHandler(this.tìnhTrạngPhòngToolStripMenuItem_Click);
             // 
@@ -350,6 +354,13 @@ namespace Quan_Li_Khach_San_NET
             this.txtKhachHang.Size = new System.Drawing.Size(359, 34);
             this.txtKhachHang.TabIndex = 86;
             // 
+            // chiTiếtPhòngĐặtToolStripMenuItem
+            // 
+            this.chiTiếtPhòngĐặtToolStripMenuItem.Name = "chiTiếtPhòngĐặtToolStripMenuItem";
+            this.chiTiếtPhòngĐặtToolStripMenuItem.Size = new System.Drawing.Size(299, 36);
+            this.chiTiếtPhòngĐặtToolStripMenuItem.Text = "Chi tiết phòng đặt";
+            this.chiTiếtPhòngĐặtToolStripMenuItem.Click += new System.EventHandler(this.chiTiếtPhòngĐặtToolStripMenuItem_Click);
+            // 
             // FrmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -369,7 +380,7 @@ namespace Quan_Li_Khach_San_NET
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.statusStrip);
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmHome";
             this.Text = "FrmHome";
             this.Load += new System.EventHandler(this.FrmHome_Load);
@@ -413,6 +424,7 @@ namespace Quan_Li_Khach_San_NET
         private System.Windows.Forms.ToolStripMenuItem báoCáoDnahSáchNhânViênToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem báoCáoPhòngĐangSửDụngToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thoátToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem chiTiếtPhòngĐặtToolStripMenuItem;
     }
 }
 

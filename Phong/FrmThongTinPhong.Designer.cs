@@ -161,8 +161,8 @@ namespace Quan_Li_Khach_San_NET
             this.cboTinhTrang.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTinhTrang.FormattingEnabled = true;
             this.cboTinhTrang.Items.AddRange(new object[] {
-            "0",
-            "1"});
+            "False",
+            "True"});
             this.cboTinhTrang.Location = new System.Drawing.Point(527, 277);
             this.cboTinhTrang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboTinhTrang.Name = "cboTinhTrang";

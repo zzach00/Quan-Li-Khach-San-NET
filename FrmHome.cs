@@ -182,6 +182,16 @@ namespace Quan_Li_Khach_San_NET
 
             dataGridViewTimKiemThongTin.DataSource = dta;
         }
-            
+
+        private void phòngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chiTiếtPhòngĐặtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmChiTietDatPhong frm10 = new FrmChiTietDatPhong();
+            frm10.Show();
+        }
     }
 }

@@ -101,6 +101,12 @@
       <DependentUpon>FrmInThongTinDatPhong.cs</DependentUpon>
     </Compile>
     <Compile Include="Ketnoi.cs" />
+    <Compile Include="KhachHang\FrmChiTietDatPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhachHang\FrmChiTietDatPhong.Designer.cs">
+      <DependentUpon>FrmChiTietDatPhong.cs</DependentUpon>
+    </Compile>
     <Compile Include="KhachHang\FrmDatPhong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +206,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInThongTinDatPhong.resx">
       <DependentUpon>FrmInThongTinDatPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhachHang\FrmChiTietDatPhong.resx">
+      <DependentUpon>FrmChiTietDatPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KhachHang\FrmDatPhong.resx">
       <DependentUpon>FrmDatPhong.cs</DependentUpon>
