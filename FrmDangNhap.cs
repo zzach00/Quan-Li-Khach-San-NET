@@ -55,7 +55,11 @@ namespace Quan_Li_Khach_San_NET
 
         private void checkHienThiMK_CheckedChanged(object sender, EventArgs e)
         {
-                txtMatKhau.PasswordChar = '\0';
+            if (checkHienThiMK.Checked == true)
+            { txtMatKhau.PasswordChar = '\0'; }
+            else
+            { txtMatKhau.PasswordChar = '*'; }
+
         }
     }
 }
