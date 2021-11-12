@@ -44,7 +44,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
         public void GET_TABLE_HOADON()
         {
             DataTable dta = new DataTable();
-            dta = kn.Lay_DulieuBang("Select * From hoadon");
+            dta = kn.Lay_DulieuBang("Select * from hoadon order by mahd");
             dataGridViewHoadon.DataSource = dta;
             ShowData();
         }
@@ -133,6 +133,15 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             string sql_tim_kiem;
             sql_tim_kiem = "Select * from hoadon where mahd like '%" + txtMaHoaDon.Text + "%'";
             dta = kn.Lay_DulieuBang(sql_tim_kiem);
+            dataGridViewHoadon.DataSource = dta;
+        }
+
+        private void btnTinhTongTien_Click(object sender, EventArgs e)
+        {
+            DataTable dta = new DataTable();
+            string sql_tinhtongtien;
+            sql_tinhtongtien = "Select TinhTongTien from tongTienPhong where madp like '%" + cboMaDatPhong.Text + "%'";
+            dta = kn.Lay_DulieuBang(sql_tinhtongtien);
             dataGridViewHoadon.DataSource = dta;
         }
     }

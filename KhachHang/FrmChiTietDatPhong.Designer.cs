@@ -161,6 +161,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             this.cboMaDp.FormattingEnabled = true;
             this.cboMaDp.Location = new System.Drawing.Point(247, 151);
             this.cboMaDp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboMaDp.MaxDropDownItems = 5;
             this.cboMaDp.Name = "cboMaDp";
             this.cboMaDp.Size = new System.Drawing.Size(297, 37);
             this.cboMaDp.TabIndex = 71;
@@ -169,8 +170,10 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             // 
             this.cboMaPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMaPhong.FormattingEnabled = true;
+            this.cboMaPhong.IntegralHeight = false;
             this.cboMaPhong.Location = new System.Drawing.Point(247, 217);
             this.cboMaPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboMaPhong.MaxDropDownItems = 5;
             this.cboMaPhong.Name = "cboMaPhong";
             this.cboMaPhong.Size = new System.Drawing.Size(297, 37);
             this.cboMaPhong.TabIndex = 71;

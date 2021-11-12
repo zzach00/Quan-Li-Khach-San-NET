@@ -47,6 +47,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnTaoMoi = new System.Windows.Forms.Button();
+            this.btnTinhTongTien = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHoadon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,7 +55,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             // 
             this.btmTimKiemHoaDon.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btmTimKiemHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btmTimKiemHoaDon.Location = new System.Drawing.Point(915, 128);
+            this.btmTimKiemHoaDon.Location = new System.Drawing.Point(1146, 129);
             this.btmTimKiemHoaDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btmTimKiemHoaDon.Name = "btmTimKiemHoaDon";
             this.btmTimKiemHoaDon.Size = new System.Drawing.Size(221, 49);
@@ -71,7 +72,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             this.dataGridViewHoadon.Name = "dataGridViewHoadon";
             this.dataGridViewHoadon.RowHeadersWidth = 51;
             this.dataGridViewHoadon.RowTemplate.Height = 24;
-            this.dataGridViewHoadon.Size = new System.Drawing.Size(727, 230);
+            this.dataGridViewHoadon.Size = new System.Drawing.Size(882, 230);
             this.dataGridViewHoadon.TabIndex = 24;
             // 
             // cboMaDatPhong
@@ -80,8 +81,9 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             this.cboMaDatPhong.FormattingEnabled = true;
             this.cboMaDatPhong.Location = new System.Drawing.Point(475, 220);
             this.cboMaDatPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboMaDatPhong.MaxDropDownItems = 5;
             this.cboMaDatPhong.Name = "cboMaDatPhong";
-            this.cboMaDatPhong.Size = new System.Drawing.Size(359, 37);
+            this.cboMaDatPhong.Size = new System.Drawing.Size(269, 37);
             this.cboMaDatPhong.TabIndex = 22;
             // 
             // label4
@@ -129,7 +131,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             this.txtMaHoaDon.Location = new System.Drawing.Point(475, 158);
             this.txtMaHoaDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaHoaDon.Name = "txtMaHoaDon";
-            this.txtMaHoaDon.Size = new System.Drawing.Size(359, 34);
+            this.txtMaHoaDon.Size = new System.Drawing.Size(514, 34);
             this.txtMaHoaDon.TabIndex = 11;
             // 
             // dateNgayLap
@@ -138,7 +140,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             this.dateNgayLap.Location = new System.Drawing.Point(473, 292);
             this.dateNgayLap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateNgayLap.Name = "dateNgayLap";
-            this.dateNgayLap.Size = new System.Drawing.Size(359, 34);
+            this.dateNgayLap.Size = new System.Drawing.Size(514, 34);
             this.dateNgayLap.TabIndex = 73;
             // 
             // label5
@@ -153,11 +155,11 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             // 
             // txtTongTien
             // 
-            this.txtTongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTongTien.Location = new System.Drawing.Point(473, 350);
             this.txtTongTien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTongTien.Name = "txtTongTien";
-            this.txtTongTien.Size = new System.Drawing.Size(359, 34);
+            this.txtTongTien.Size = new System.Drawing.Size(301, 38);
             this.txtTongTien.TabIndex = 11;
             // 
             // label3
@@ -174,7 +176,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             // 
             this.btnInHoaDon.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnInHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInHoaDon.Location = new System.Drawing.Point(915, 207);
+            this.btnInHoaDon.Location = new System.Drawing.Point(1146, 208);
             this.btnInHoaDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnInHoaDon.Name = "btnInHoaDon";
             this.btnInHoaDon.Size = new System.Drawing.Size(221, 49);
@@ -186,7 +188,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             // btnThoat
             // 
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(915, 607);
+            this.btnThoat.Location = new System.Drawing.Point(1146, 608);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(221, 52);
@@ -198,7 +200,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(915, 524);
+            this.btnXoa.Location = new System.Drawing.Point(1146, 525);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(221, 52);
@@ -210,7 +212,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             // btnLuu
             // 
             this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.Location = new System.Drawing.Point(915, 441);
+            this.btnLuu.Location = new System.Drawing.Point(1146, 442);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(221, 52);
@@ -222,7 +224,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(915, 358);
+            this.btnSua.Location = new System.Drawing.Point(1146, 359);
             this.btnSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(221, 52);
@@ -234,7 +236,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             // btnTaoMoi
             // 
             this.btnTaoMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaoMoi.Location = new System.Drawing.Point(915, 281);
+            this.btnTaoMoi.Location = new System.Drawing.Point(1146, 282);
             this.btnTaoMoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTaoMoi.Name = "btnTaoMoi";
             this.btnTaoMoi.Size = new System.Drawing.Size(221, 52);
@@ -243,11 +245,26 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             this.btnTaoMoi.UseVisualStyleBackColor = true;
             this.btnTaoMoi.Click += new System.EventHandler(this.btnTaoMoi_Click);
             // 
+            // btnTinhTongTien
+            // 
+            this.btnTinhTongTien.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.btnTinhTongTien.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnTinhTongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTinhTongTien.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnTinhTongTien.Location = new System.Drawing.Point(785, 219);
+            this.btnTinhTongTien.Name = "btnTinhTongTien";
+            this.btnTinhTongTien.Size = new System.Drawing.Size(204, 40);
+            this.btnTinhTongTien.TabIndex = 79;
+            this.btnTinhTongTien.Text = "Tính tổng tiền";
+            this.btnTinhTongTien.UseVisualStyleBackColor = false;
+            this.btnTinhTongTien.Click += new System.EventHandler(this.btnTinhTongTien_Click);
+            // 
             // FrmHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1505, 720);
+            this.Controls.Add(this.btnTinhTongTien);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnLuu);
@@ -296,5 +313,6 @@ namespace Quan_Li_Khach_San_NET.KhachHang
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnTaoMoi;
+        private System.Windows.Forms.Button btnTinhTongTien;
     }
 }

@@ -43,6 +43,7 @@ namespace Quan_Li_Khach_San_NET
             this.dataGridViewPhong = new System.Windows.Forms.DataGridView();
             this.cboTenLoaiPhong = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.btmTimKiemLoaiPhong = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPhong)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,10 +59,10 @@ namespace Quan_Li_Khach_San_NET
             // btnTaoMoi
             // 
             this.btnTaoMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaoMoi.Location = new System.Drawing.Point(967, 150);
+            this.btnTaoMoi.Location = new System.Drawing.Point(962, 147);
             this.btnTaoMoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTaoMoi.Name = "btnTaoMoi";
-            this.btnTaoMoi.Size = new System.Drawing.Size(272, 52);
+            this.btnTaoMoi.Size = new System.Drawing.Size(225, 52);
             this.btnTaoMoi.TabIndex = 2;
             this.btnTaoMoi.Text = "Tạo mới";
             this.btnTaoMoi.UseVisualStyleBackColor = true;
@@ -70,10 +71,10 @@ namespace Quan_Li_Khach_San_NET
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(967, 226);
+            this.btnSua.Location = new System.Drawing.Point(962, 223);
             this.btnSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(272, 52);
+            this.btnSua.Size = new System.Drawing.Size(225, 52);
             this.btnSua.TabIndex = 3;
             this.btnSua.Text = "Sửa thông tin";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -82,10 +83,10 @@ namespace Quan_Li_Khach_San_NET
             // btnLuu
             // 
             this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.Location = new System.Drawing.Point(967, 310);
+            this.btnLuu.Location = new System.Drawing.Point(962, 307);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(272, 52);
+            this.btnLuu.Size = new System.Drawing.Size(225, 52);
             this.btnLuu.TabIndex = 4;
             this.btnLuu.Text = "Lưu thông tin";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -94,10 +95,10 @@ namespace Quan_Li_Khach_San_NET
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(967, 393);
+            this.btnXoa.Location = new System.Drawing.Point(962, 390);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(272, 52);
+            this.btnXoa.Size = new System.Drawing.Size(225, 52);
             this.btnXoa.TabIndex = 5;
             this.btnXoa.Text = "Xóa phòng";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -106,10 +107,10 @@ namespace Quan_Li_Khach_San_NET
             // btnThoat
             // 
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(967, 476);
+            this.btnThoat.Location = new System.Drawing.Point(962, 473);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(272, 52);
+            this.btnThoat.Size = new System.Drawing.Size(225, 52);
             this.btnThoat.TabIndex = 6;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -188,7 +189,7 @@ namespace Quan_Li_Khach_San_NET
             this.cboTenLoaiPhong.Location = new System.Drawing.Point(527, 210);
             this.cboTenLoaiPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboTenLoaiPhong.Name = "cboTenLoaiPhong";
-            this.cboTenLoaiPhong.Size = new System.Drawing.Size(359, 37);
+            this.cboTenLoaiPhong.Size = new System.Drawing.Size(223, 37);
             this.cboTenLoaiPhong.TabIndex = 8;
             // 
             // label4
@@ -200,11 +201,25 @@ namespace Quan_Li_Khach_San_NET
             this.label4.Size = new System.Drawing.Size(0, 29);
             this.label4.TabIndex = 7;
             // 
+            // btmTimKiemLoaiPhong
+            // 
+            this.btmTimKiemLoaiPhong.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btmTimKiemLoaiPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btmTimKiemLoaiPhong.Location = new System.Drawing.Point(770, 210);
+            this.btmTimKiemLoaiPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btmTimKiemLoaiPhong.Name = "btmTimKiemLoaiPhong";
+            this.btmTimKiemLoaiPhong.Size = new System.Drawing.Size(115, 36);
+            this.btmTimKiemLoaiPhong.TabIndex = 73;
+            this.btmTimKiemLoaiPhong.Text = "Tìm kiếm";
+            this.btmTimKiemLoaiPhong.UseVisualStyleBackColor = false;
+            this.btmTimKiemLoaiPhong.Click += new System.EventHandler(this.btmTimKiemLoaiPhong_Click);
+            // 
             // FrmThongTinPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1300, 641);
+            this.Controls.Add(this.btmTimKiemLoaiPhong);
             this.Controls.Add(this.dataGridViewPhong);
             this.Controls.Add(this.cboTenLoaiPhong);
             this.Controls.Add(this.cboTinhTrang);
@@ -245,5 +260,6 @@ namespace Quan_Li_Khach_San_NET
         private System.Windows.Forms.DataGridView dataGridViewPhong;
         private System.Windows.Forms.ComboBox cboTenLoaiPhong;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btmTimKiemLoaiPhong;
     }
 }

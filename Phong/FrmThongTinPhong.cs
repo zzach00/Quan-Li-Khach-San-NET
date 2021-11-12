@@ -118,5 +118,14 @@ namespace Quan_Li_Khach_San_NET
             GET_TABLE_THONGTINPHONG();
 
         }
+
+        private void btmTimKiemLoaiPhong_Click(object sender, EventArgs e)
+        {
+            DataTable dta = new DataTable();
+            string sql_tim_kiem;
+            sql_tim_kiem = "Select * from phong where tenlp like '%" + cboTenLoaiPhong.Text + "%'";
+            dta = kn.Lay_DulieuBang(sql_tim_kiem);
+            dataGridViewPhong.DataSource = dta;
+        }
     }
 }
