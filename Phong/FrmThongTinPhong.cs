@@ -116,7 +116,6 @@ namespace Quan_Li_Khach_San_NET
             cboTenLoaiPhong.DataSource = dtamcv;
             cboTenLoaiPhong.DisplayMember = "tenlp";
             GET_TABLE_THONGTINPHONG();
-
         }
 
         private void btmTimKiemLoaiPhong_Click(object sender, EventArgs e)

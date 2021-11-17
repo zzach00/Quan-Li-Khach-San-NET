@@ -94,8 +94,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
                     string sql_luu = "Insert into ctphongdat Values('" + cboMaDp.Text + "','" + cboMaPhong.Text + "')";
                     kn.ThucThi(sql_luu);
 
-                    string sql_capnhat1;
-                    sql_capnhat1 = "Update tinhtrangphong SET tinhtrang = 1 where madp = '" + cboMaDp.Text + "' and maphong = '" + cboMaPhong.Text + "'";
+                    string sql_capnhat1 = "Update tinhtrangphong SET tinhtrang = 1 where madp = '" + cboMaDp.Text + "' and maphong = '" + cboMaPhong.Text + "'";
                     kn.ThucThi(sql_capnhat1);
 
                     LayBangChiTiet();
@@ -112,13 +111,10 @@ namespace Quan_Li_Khach_San_NET.KhachHang
         {
             try
             {
-                string sql_xoa;
-                sql_xoa = "delete ctphongdat where madp = '" + cboMaDp.Text + "' and maphong = '" + cboMaPhong.Text + "'";
+                string sql_xoa = "delete ctphongdat where madp = '" + cboMaDp.Text + "' and maphong = '" + cboMaPhong.Text + "'";
+                string sql_capnhat2 = "Update phong SET tinhtrang = 0 where maphong = '" + cboMaPhong.Text + "'";
+
                 kn.ThucThi(sql_xoa);
-
-
-                string sql_capnhat2;
-                sql_capnhat2 = "Update tinhtrangphong SET tinhtrang = 0 where madp = '" + cboMaDp.Text + "' and maphong = '" + cboMaPhong.Text + "' ";
                 kn.ThucThi(sql_capnhat2);
 
                 LayBangChiTiet();
