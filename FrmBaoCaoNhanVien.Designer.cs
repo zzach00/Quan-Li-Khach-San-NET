@@ -39,21 +39,21 @@ namespace Quan_Li_Khach_San_NET
             this.CRV.Cursor = System.Windows.Forms.Cursors.Default;
             this.CRV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CRV.Location = new System.Drawing.Point(0, 0);
-            this.CRV.Margin = new System.Windows.Forms.Padding(2);
+            this.CRV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CRV.Name = "CRV";
-            this.CRV.Size = new System.Drawing.Size(1129, 585);
+            this.CRV.Size = new System.Drawing.Size(1505, 720);
             this.CRV.TabIndex = 0;
-            this.CRV.ToolPanelWidth = 150;
             this.CRV.Load += new System.EventHandler(this.CRV_Load);
             // 
             // FrmBaoCaoNhanVien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1129, 585);
+            this.ClientSize = new System.Drawing.Size(1505, 720);
             this.Controls.Add(this.CRV);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmBaoCaoNhanVien";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmBaoCaoNhanVien";
             this.ResumeLayout(false);
 

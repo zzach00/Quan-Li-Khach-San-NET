@@ -37,6 +37,7 @@ namespace Quan_Li_Khach_San_NET
             this.kháchHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinKháchHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đặtPhòngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chiTiếtPhòngĐặtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trảPhòngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.phòngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stripMenuLoaiPhong = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,7 +61,6 @@ namespace Quan_Li_Khach_San_NET
             this.rbtnTenPhong = new System.Windows.Forms.RadioButton();
             this.cboMaNhanVien = new System.Windows.Forms.ComboBox();
             this.txtKhachHang = new System.Windows.Forms.TextBox();
-            this.chiTiếtPhòngĐặtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTimKiemThongTin)).BeginInit();
@@ -128,6 +128,13 @@ namespace Quan_Li_Khach_San_NET
             this.đặtPhòngToolStripMenuItem.Text = "Đặt phòng";
             this.đặtPhòngToolStripMenuItem.Click += new System.EventHandler(this.đặtPhòngToolStripMenuItem_Click);
             // 
+            // chiTiếtPhòngĐặtToolStripMenuItem
+            // 
+            this.chiTiếtPhòngĐặtToolStripMenuItem.Name = "chiTiếtPhòngĐặtToolStripMenuItem";
+            this.chiTiếtPhòngĐặtToolStripMenuItem.Size = new System.Drawing.Size(299, 36);
+            this.chiTiếtPhòngĐặtToolStripMenuItem.Text = "Chi tiết phòng đặt";
+            this.chiTiếtPhòngĐặtToolStripMenuItem.Click += new System.EventHandler(this.chiTiếtPhòngĐặtToolStripMenuItem_Click);
+            // 
             // trảPhòngToolStripMenuItem
             // 
             this.trảPhòngToolStripMenuItem.Name = "trảPhòngToolStripMenuItem";
@@ -148,14 +155,14 @@ namespace Quan_Li_Khach_San_NET
             // stripMenuLoaiPhong
             // 
             this.stripMenuLoaiPhong.Name = "stripMenuLoaiPhong";
-            this.stripMenuLoaiPhong.Size = new System.Drawing.Size(299, 36);
+            this.stripMenuLoaiPhong.Size = new System.Drawing.Size(291, 36);
             this.stripMenuLoaiPhong.Text = "Loại phòng";
             this.stripMenuLoaiPhong.Click += new System.EventHandler(this.stripMenuLoaiPhong_Click);
             // 
             // tìnhTrạngPhòngToolStripMenuItem
             // 
             this.tìnhTrạngPhòngToolStripMenuItem.Name = "tìnhTrạngPhòngToolStripMenuItem";
-            this.tìnhTrạngPhòngToolStripMenuItem.Size = new System.Drawing.Size(299, 36);
+            this.tìnhTrạngPhòngToolStripMenuItem.Size = new System.Drawing.Size(291, 36);
             this.tìnhTrạngPhòngToolStripMenuItem.Text = "Tình trạng phòng";
             this.tìnhTrạngPhòngToolStripMenuItem.Click += new System.EventHandler(this.tìnhTrạngPhòngToolStripMenuItem_Click);
             // 
@@ -327,10 +334,10 @@ namespace Quan_Li_Khach_San_NET
             this.rbtnTenPhong.Location = new System.Drawing.Point(203, 276);
             this.rbtnTenPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbtnTenPhong.Name = "rbtnTenPhong";
-            this.rbtnTenPhong.Size = new System.Drawing.Size(151, 33);
+            this.rbtnTenPhong.Size = new System.Drawing.Size(141, 33);
             this.rbtnTenPhong.TabIndex = 85;
             this.rbtnTenPhong.TabStop = true;
-            this.rbtnTenPhong.Text = "Tên phòng";
+            this.rbtnTenPhong.Text = "Mã phòng";
             this.rbtnTenPhong.UseVisualStyleBackColor = true;
             this.rbtnTenPhong.CheckedChanged += new System.EventHandler(this.rbtnTenPhong_CheckedChanged);
             // 
@@ -354,13 +361,6 @@ namespace Quan_Li_Khach_San_NET
             this.txtKhachHang.Size = new System.Drawing.Size(359, 34);
             this.txtKhachHang.TabIndex = 86;
             // 
-            // chiTiếtPhòngĐặtToolStripMenuItem
-            // 
-            this.chiTiếtPhòngĐặtToolStripMenuItem.Name = "chiTiếtPhòngĐặtToolStripMenuItem";
-            this.chiTiếtPhòngĐặtToolStripMenuItem.Size = new System.Drawing.Size(299, 36);
-            this.chiTiếtPhòngĐặtToolStripMenuItem.Text = "Chi tiết phòng đặt";
-            this.chiTiếtPhòngĐặtToolStripMenuItem.Click += new System.EventHandler(this.chiTiếtPhòngĐặtToolStripMenuItem_Click);
-            // 
             // FrmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -382,6 +382,7 @@ namespace Quan_Li_Khach_San_NET
             this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmHome";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmHome";
             this.Load += new System.EventHandler(this.FrmHome_Load);
             this.statusStrip.ResumeLayout(false);

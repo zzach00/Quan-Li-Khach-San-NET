@@ -53,6 +53,7 @@ namespace Quan_Li_Khach_San_NET
             this.Controls.Add(this.CRV);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmBaoCaoDoanhThu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmBaoCaoDoanhThu";
             this.Load += new System.EventHandler(this.FrmBaoCaoDoanhThu_Load);
             this.ResumeLayout(false);

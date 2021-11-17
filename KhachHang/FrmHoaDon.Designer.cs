@@ -285,6 +285,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             this.Controls.Add(this.txtMaHoaDon);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmHoaDon";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmHoaDon";
             this.Load += new System.EventHandler(this.FrmHoaDon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHoadon)).EndInit();

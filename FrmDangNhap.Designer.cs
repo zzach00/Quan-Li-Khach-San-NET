@@ -140,6 +140,7 @@ namespace Quan_Li_Khach_San_NET
             this.Controls.Add(this.label6);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmDangNhap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmDangNhap";
             this.ResumeLayout(false);
             this.PerformLayout();

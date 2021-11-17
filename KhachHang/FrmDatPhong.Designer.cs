@@ -405,6 +405,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             this.Controls.Add(this.txtMaDatPhong);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmDatPhong";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmDatPhong";
             this.Load += new System.EventHandler(this.FrmDatPhong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDatPhong)).EndInit();

@@ -273,6 +273,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             this.Controls.Add(this.txtMaKH);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmThongTinKhachHang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thông tin khách hàng";
             this.Load += new System.EventHandler(this.FrmThongTinKhachHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewThongTinKH)).EndInit();

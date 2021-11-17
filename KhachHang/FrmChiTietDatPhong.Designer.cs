@@ -210,6 +210,7 @@ namespace Quan_Li_Khach_San_NET.KhachHang
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnTaoMoi);
             this.Name = "FrmChiTietDatPhong";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmChiTietDatPhong";
             this.Load += new System.EventHandler(this.FrmChiTietDatPhong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCtDp)).EndInit();
