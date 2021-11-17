@@ -278,6 +278,7 @@ namespace Quan_Li_Khach_San_NET
             this.cboTenPhong.Enabled = false;
             this.cboTenPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTenPhong.FormattingEnabled = true;
+            this.cboTenPhong.IntegralHeight = false;
             this.cboTenPhong.Location = new System.Drawing.Point(437, 272);
             this.cboTenPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboTenPhong.Name = "cboTenPhong";
